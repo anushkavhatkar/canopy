@@ -1,12 +1,10 @@
 /* VARIABLES */
 :root {
-
 }
 
 
 /* SITWIDE */
 body {
-    background-color: teal;
     width: 90vw;
     margin: 0 auto;
 }
@@ -14,29 +12,54 @@ body {
 
 /* TYPOGRAPHY */
 
+.header { 
+font-family: shift, serif;
+font-weight: 100;
+font-size: 24px;
+color: #888888;
+}
 
+.header:hover { 
+    font-family: shift, serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.header-italic { 
+font-family: shift, serif;
+font-weight: 100;
+font-style: italic;
+font-size: 24px;
+}
+
+.body-text { 
+font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing: .01em;
+font-size: 18px;
+}
 
 
 /* GENERAL STYLES */
 
-
+.site-nav { 
+    margin: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
 /* UTILITIES */
 
-ul { 
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
 
 
-p {
-    font-family: 'PicNic';
-}
+
 
 
 
