@@ -1,8 +1,6 @@
 /* VARIABLES */
 :root {
-    --heading: 'Cardone-Light-Italic';
-    --heading-italic: 'Cardone-Light';
-    --body-text: 'Atlas-Medium';
+
 }
 
 
@@ -16,20 +14,7 @@ body {
 
 /* TYPOGRAPHY */
 
-@font-face {
-    font-family: "Cardone-Light-Italic";
-    src: url(../canopy/assets/CardoneTrial-LightItalic.otf) format('opentype');
-}
 
-@font-face {
-    font-family: "Cardone-Light";
-    src: url(../canopy/assets/CardoneTrial-Light.otf) format('opentype') ;
-}
-
-@font-face {
-    font-family: "Atlas-Medium";
-    src: url(../canopy/assets/AtlasGrotesk-Medium-Trial.otf) format('opentype');
-}
 
 
 /* GENERAL STYLES */
@@ -45,23 +30,12 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: var(--body-text);
+
 }
 
-/* li {
-    font-family: "Atlas-Medium";
-    font-weight: 400;
-    font-style: normal;
-}
-
-.title-bar {
-    font-family: "Atlas-Medium";
-    font-weight: 400;
-    font-style: normal;
-} */
 
 p {
-    font-family: var(--body-text);
+    font-family: 'PicNic';
 }
 
 
