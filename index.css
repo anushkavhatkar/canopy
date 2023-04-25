@@ -32,6 +32,7 @@ font-family: shift, serif;
 font-weight: 100;
 font-size: 24px;
 color: #888888;
+color: var(--middle-grey);
 }
 
 .header:hover { 
@@ -50,13 +51,22 @@ font-size: 24px;
 }
 
 .body-text { 
+.filter-text { 
 font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 500;
 font-style: normal;
 letter-spacing: .01em;
+letter-spacing: .02em;
 font-size: 18px;
 }
 
+.body-text { 
+font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing: .02em;
+font-size: 16px;
+}
 
 /* GENERAL STYLES */
 
