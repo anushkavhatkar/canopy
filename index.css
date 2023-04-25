@@ -78,6 +78,22 @@ font-size: 16px;
     justify-content: space-between;
 }
 
+nav:nth-child(2) { 
+    position: fixed;
+    bottom: 1em;
+    left: 25vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.filters { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
 /* FILTER BUTTONS AND HOVER */
 
 .info-btn { 
