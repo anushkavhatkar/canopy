@@ -78,6 +78,66 @@ font-size: 16px;
     justify-content: space-between;
 }
 
+/* FILTER BUTTONS AND HOVER */
+
+.info-btn { 
+    padding: .35em .75em;
+    background-color: white;
+    border: white solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    background-color: white;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-active-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    background-color: var(--light-grey);
+    border-radius: .5em;
+    width: max-content;
+}
+
+.native-filter-btn {
+    margin: 0 .35em;
+    padding: .35em .75em;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.non-filter-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-btn:hover { 
+    border: none;
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.native-filter-btn:hover { 
+    border: none;
+    background-color: var(--non-three);
+    cursor: pointer;
+}
+
+.non-filter-btn:hover { 
+    border: none;
+    background-color: var(--native-one);
+    cursor: pointer;
+}
 
 
 /* UTILITIES */
