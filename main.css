@@ -1,0 +1,165 @@
+/* VARIABLES */
+:root {
+    --black: #000000; 
+    --white: #ffffff;
+    --middle-grey: #888888;
+    --light-grey: #D0D0D0;
+    --native-one: #01AF5A;
+    --native-two: #C9E518;
+    --native-three: #EBEE6D;
+    --native-four: #6AFBA4;
+    --native-five: #5DD8B3;
+    --native-six: #00CF08; 
+
+    --non-one: #315B51;
+    --non-two: #4C7345;
+    --non-three: #758C6A;
+    --non-four: #758C6A; 
+}
+
+
+/* SITWIDE */
+body {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* TYPOGRAPHY */
+
+.header { 
+font-family: shift, serif;
+font-weight: 100;
+font-size: 24px;
+color: var(--middle-grey);
+}
+
+.header:hover { 
+    font-family: shift, serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.header-italic { 
+font-family: shift, serif;
+font-weight: 100;
+font-style: italic;
+font-size: 24px;
+}
+
+.filter-text { 
+font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing: .02em;
+font-size: 18px;
+}
+
+.body-text { 
+font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing: .02em;
+font-size: 16px;
+}
+
+/* GENERAL STYLES */
+
+.site-nav { 
+    margin: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav:nth-child(2) { 
+    position: fixed;
+    bottom: 1em;
+    left: 25vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.filters { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* FILTER BUTTONS AND HOVER */
+
+.info-btn { 
+    padding: .35em .75em;
+    background-color: white;
+    border: white solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    background-color: white;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-active-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    background-color: var(--light-grey);
+    border-radius: .5em;
+    width: max-content;
+}
+
+.native-filter-btn {
+    margin: 0 .35em;
+    padding: .35em .75em;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.non-filter-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-btn:hover { 
+    border: none;
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.native-filter-btn:hover { 
+    border: none;
+    background-color: var(--non-three);
+    cursor: pointer;
+}
+
+.non-filter-btn:hover { 
+    border: none;
+    background-color: var(--native-one);
+    cursor: pointer;
+}
+
+
+/* UTILITIES */
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
