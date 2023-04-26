@@ -53,7 +53,7 @@ color: var(--middle-grey);
 font-family: shift, serif;
 font-weight: 100;
 font-style: italic;
-font-size: 24px;
+font-size: var(--header-text-size);
 }
 
 .filter-text { 
@@ -92,9 +92,6 @@ font-size: var(--filter-text-size);
     display: flex;
     flex-direction: row;
     justify-content: flex-start; 
-  /* position: fixed;
-  bottom: 1em;
-  left: 30vw; */
 
 }
 
