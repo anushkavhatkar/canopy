@@ -5,6 +5,7 @@
     --light-white: #F1F0ED; 
     --middle-grey: #888888;
     --light-grey: #D0D0D0;
+    
     --native-one: #01AF5A;
     --native-two: #C9E518;
     --native-three: #EBEE6D;
@@ -67,22 +68,29 @@ letter-spacing: .02em;
 font-size: 16px;
 }
 
+
+
+
 /* GENERAL STYLES */
 
 .site-nav { 
-    margin: 1em;
+    margin: 1em 0em;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-nav:nth-child(2) { 
-    position: fixed;
+.filter-bar { 
+/*     position: fixed;
     bottom: 1em;
-    left: 25vw;
+    left: 30vw; */
     display: flex;
     flex-direction: row;
+  justify-content: space-evenly; 
+  position: fixed;
+  bottom: 1em;
+  left: 30vw;
 
 }
 
@@ -90,6 +98,7 @@ nav:nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 
@@ -97,8 +106,8 @@ nav:nth-child(2) {
 
 .info-btn { 
     padding: .35em .75em;
-    background-color: white;
-    border: white solid .075em;
+    background-color: var(--light-white);
+    border: var(--light-white) solid .075em;
     border-radius: .5em;
     width: max-content;
 }
@@ -106,7 +115,7 @@ nav:nth-child(2) {
 .filter-btn { 
     margin: 0 .35em;
     padding: .35em .75em;
-    background-color: white;
+    background-color: var(--light-white);
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
@@ -153,19 +162,19 @@ nav:nth-child(2) {
 }
 
 .filter-btn:hover { 
-    border: var(--white) solid .075em;
+    border: var(--light-white) solid .075em;
     background-color: var(--light-grey);
     cursor: pointer;
 }
 
 .native-filter-btn:hover { 
-    border: var(--white) solid .075em;
+    border: var(--light-white) solid .075em;
     background-color: var(--non-three);
     cursor: pointer;
 }
 
 .non-filter-btn:hover { 
-    border: var(--white) solid .075em;
+    border: var(--light-white) solid .075em;
     background-color: var(--native-one);
     cursor: pointer;
 }
