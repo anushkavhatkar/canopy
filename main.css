@@ -108,6 +108,11 @@ nav:nth-child(2) {
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
+
+    transition-duration: .15s, .15s;
+	transition-property: background-color, transform;
+	transition-timing-function: linear, ease-in-out;
+	will-change: transform;
 }
 
 .filter-active-btn { 
@@ -116,6 +121,7 @@ nav:nth-child(2) {
     background-color: var(--light-grey);
     border-radius: .5em;
     width: max-content;
+    
 }
 
 .native-filter-btn {
@@ -124,6 +130,11 @@ nav:nth-child(2) {
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
+
+    transition-duration: .15s, .15s;
+	transition-property: background-color, transform;
+	transition-timing-function: linear, ease-in-out;
+	will-change: transform;
 }
 
 .non-filter-btn { 
@@ -132,22 +143,27 @@ nav:nth-child(2) {
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
+
+    transition-duration: .15s, .15s;
+	transition-property: background-color, transform;
+	transition-timing-function: linear, ease-in-out;
+	will-change: transform;
 }
 
 .filter-btn:hover { 
-    border: none;
+    border: var(--white) solid .075em;
     background-color: var(--light-grey);
     cursor: pointer;
 }
 
 .native-filter-btn:hover { 
-    border: none;
+    border: var(--white) solid .075em;
     background-color: var(--non-three);
     cursor: pointer;
 }
 
 .non-filter-btn:hover { 
-    border: none;
+    border: var(--white) solid .075em;
     background-color: var(--native-one);
     cursor: pointer;
 }
