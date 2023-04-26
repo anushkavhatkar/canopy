@@ -95,6 +95,12 @@ font-size: var(--filter-text-size);
 
 }
 
+.flex-btn { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .all-filters { 
     display: flex;
     flex-direction: row;
