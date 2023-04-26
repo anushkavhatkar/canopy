@@ -86,22 +86,22 @@ font-size: var(--filter-text-size);
 }
 
 .filter-bar { 
-/*     position: fixed;
+    position: fixed;
     bottom: 1em;
-    left: 30vw; */
+    left: 30vw;
     display: flex;
     flex-direction: row;
-  justify-content: space-evenly; 
-  position: fixed;
+    justify-content: flex-start; 
+  /* position: fixed;
   bottom: 1em;
-  left: 30vw;
+  left: 30vw; */
 
 }
 
-.filters { 
+.all-filters { 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:flex-start;
 
 }
 
