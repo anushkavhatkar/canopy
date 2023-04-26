@@ -2,6 +2,7 @@
 :root {
     --black: #000000; 
     --white: #ffffff;
+    --light-white: #F1F0ED; 
     --middle-grey: #888888;
     --light-grey: #D0D0D0;
     --native-one: #01AF5A;
@@ -22,6 +23,7 @@
 body {
     width: 90vw;
     margin: 0 auto;
+    background-color: var(--light-white);
 }
 
 
