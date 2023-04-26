@@ -17,6 +17,10 @@
     --non-two: #4C7345;
     --non-three: #758C6A;
     --non-four: #758C6A; 
+
+    --header-text-size: 24px;
+    --filter-text-size: 18px;
+    --body-text-size: 16px;
 }
 
 
@@ -33,14 +37,14 @@ body {
 .header { 
 font-family: shift, serif;
 font-weight: 100;
-font-size: 24px;
+font-size: var(--header-text-size);
 color: var(--middle-grey);
 }
 
 .header:hover { 
     font-family: shift, serif;
     font-weight: 100;
-    font-size: 24px;
+    font-size: var(--header-text-size);
     color: black;
     cursor: pointer;
 }
@@ -57,7 +61,7 @@ font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 500;
 font-style: normal;
 letter-spacing: .02em;
-font-size: 18px;
+font-size: var(--filter-text-size);
 }
 
 .body-text { 
@@ -65,7 +69,7 @@ font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 500;
 font-style: normal;
 letter-spacing: .02em;
-font-size: 16px;
+font-size: var(--filter-text-size);
 }
 
 
