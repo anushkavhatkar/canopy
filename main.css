@@ -231,6 +231,10 @@ font-size: var(--filter-text-size);
     
     }
 
+    .flex-btn { 
+        margin-bottom: .5em;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -262,7 +266,4 @@ font-size: var(--filter-text-size);
     
     }
 
-    .flex-btn { 
-        margin-bottom: .5em;
-    }
 }
