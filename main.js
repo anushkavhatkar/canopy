@@ -176,10 +176,10 @@ fetch(url)
     // console.log(findOak);
     // console.log(findOak.length);
     
-    console.log(oaks.length);
-    console.log(oaks);
-    console.log(maples.length);
-    console.log(maples);
+    console.log(pinOakArray.length);
+    console.log(pinOakArray);
+    console.log(redMapleArray.length);
+    console.log(redMapleArray);
     
   });
 

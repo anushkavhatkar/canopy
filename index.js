@@ -22,7 +22,7 @@ function size(){
     box.className = 'box';
     container.appendChild(box);
     
-    box.style.padding = window.innerWidth/40 + "px";
+    box.style.padding = window.innerWidth/50 + "px";
     box.style.backgroundColor = randomColor(treeColorsArray);
     // box.style.height = window.innerHeight/20 + "px";
     // box.style.width = window.innerHeight/20 + "px";
