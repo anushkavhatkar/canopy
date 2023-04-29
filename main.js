@@ -125,11 +125,37 @@ fetch(url)
 
     json.forEach(function (tree) { 
         if (tree.spc_common == "pin oak") {
-            treesDOM += `<div class="pin-oak"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
-            </div>`;
+            // treesDOM += `<div class="pin-oak"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+            // </div>`;
+            pinOakArray.push(tree);
+
         }
 
-        
+        if (tree.spc_common == "red maple") {
+            // treesDOM += `<div class="red-maple"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+            // </div>`;
+            redMapleArray.push(tree);
+        }
+
+        // if (tree.spc_common == "honeylocust") {
+        //     treesDOM += `<div class="honeylocust"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+        //     </div>`;
+        // }
+
+        // if (tree.spc_common == "American linden") {
+        //     treesDOM += `<div class="american-linden"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+        //     </div>`;
+        // }
+
+        // if (tree.spc_common == "London planetree") {
+        //     treesDOM += `<div class="london-planetree"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+        //     </div>`;
+        // }
+
+        // if (tree.spc_common == "ginkgo") {
+        //     treesDOM += `<div class="ginkgo"> (${tree.tree_id}), (${tree.spc_common}), (${tree.spc_latin})
+        //     </div>`;
+        // }
 
 
     });
@@ -138,4 +164,19 @@ fetch(url)
     treesDOM += `</div>`
     mainContainer.innerHTML = treesDOM;
 
+    // const findOak = json.some((tree) => {
+    //     return tree.spc_common == "pin oak";
+    // })
+
+    // console.log(findOak);
+    // console.log(findOak.length);
+    
+    console.log(oaks.length);
+    console.log(oaks);
+    console.log(maples.length);
+    console.log(maples);
+    
   });
+
+
+
