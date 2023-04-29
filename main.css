@@ -38,14 +38,14 @@ body {
 font-family: shift, serif;
 font-weight: 100;
 font-size: var(--header-text-size);
-color: var(--middle-grey);
+color: var(--black);
 }
 
 .header:hover { 
     font-family: shift, serif;
     font-weight: 100;
     font-size: var(--header-text-size);
-    color: black;
+    color: var(--middle-grey);
     cursor: pointer;
 }
 
@@ -198,7 +198,25 @@ font-size: var(--filter-text-size);
     color: blue;
 }
 
+.red-maple {
+    color: pink;
+}
 
+.honeylocust {
+    color: green;
+}
+
+.american-linden {
+    color: aqua;
+}
+
+.london-planetree { 
+    color: red;
+}
+
+.ginkgo {
+    color: purple;
+}
 
 
 /* ANIMATIONS */
