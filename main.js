@@ -6,9 +6,12 @@ const mainContainer = document.querySelector('#container');
 
 const LIMIT = 580000; 
 
-let treesDOM = "<div>";
+let treesDOM = " ";
 
-/* ALL TREE SPECIES ARRAY LIST */
+
+
+
+/* ------------------------------------ ALL TREE SPECIES ARRAYS ------------------------------------ */
 
 
 let pinOakArray = [];
@@ -94,7 +97,9 @@ let chineseTreeLilacArray = [];
 // let daimioOakArray = [];
 // let italianOakArray = [];
 
-/*                                      */
+
+
+/* ------------------------------------  TREE COLOR ARRAYS  ------------------------------------ */
 
 
 let nonNativeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "#00CE78", "#0AFA5C", "#0CF090", "#DBFF00", "#80FF00", "#00FFA3", "#6AFBA4", "#5DD8B3", "#00CF08", "#C9E518", "#EBEE6D","#01AF5A", "#00FF19", "#20E0A6", "#20E084", "#6BEE90", "#B3ECB2", "#76DAA4", "#5CE05A", "#00FF75","#91FF8E", "#B0FF62", "#93FF26","#76EC00","#D8FAA0","#CDFF7A","#14B87D", "#00C766" ]
@@ -160,7 +165,7 @@ fetch(url)
 
     });
 
-    treesDOM += `</div>`
+    // treesDOM += `</div>`
     treesDOM += `</div>`
     mainContainer.innerHTML = treesDOM;
 
