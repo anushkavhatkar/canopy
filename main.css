@@ -111,6 +111,27 @@ font-size: var(--filter-text-size);
 
 }
 
+#container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.tree-box { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 40vw;
+}
+
+.box { 
+    display: inline-block;
+    background-color: var(--native-two);
+    padding: 10px;
+    margin: .025em;
+}
 
 /* ------------------------------------ FILTER BUTTONS AND HOVER ------------------------------------ */
 
