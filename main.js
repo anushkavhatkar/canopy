@@ -450,6 +450,25 @@ fetch(url)
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS ------------------------------------ */
 
+    function createTheDivs(arr) { 
+        for (let i=0; i < arr[i].length; i++) {
+            // treesDOM += `<p class="body-text">${[i]}</p>`
+            treesDOM += `<div class="viz-container">`;
+            treesDOM += `<p class="body-text">${arr[i][i].spc_common}</p>`;
+            treesDOM += `<div class="tree-container">`;
+
+            for (let j=0; j < Math.floor(arr[i].length/100); j++) {
+                treesDOM += `<div class="tiny-box ${arr[i][i].spc_common}"></div>`
+            };
+
+            treesDOM += `</div>`
+            treesDOM += `</div>`
+        }
+    }; 
+
+    createTheDivs(allArray);
+
+    mainContainer.innerHTML = treesDOM;
 
     // console.log(pinOakArray.length);
     // console.log(pinOakArray);
