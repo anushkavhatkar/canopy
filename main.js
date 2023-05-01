@@ -419,17 +419,35 @@ fetch(url)
     
     console.log(allArray); 
 
-    treesDOM += `</div>`
+    // allArray.forEach(function createDivs() {
+    //     treesDOM += `<div class="tree-container">`;
 
+    //     for (i=0; i<Math.floor(allArray[i].length/100); i++) { 
+    //         treesDOM += `<div class="tree-${[i]}"></div>`
+    //     };
 
-    mainContainer.innerHTML = treesDOM;
+    //     treesDOM += `</div>`
 
-    allArray.push(pinOakArray, redMapleArray);
+    // })
+
+    // function createDivs (arr) {
+    //     treesDOM += `<div class="tree-container">`;
+    //     for (i=0; i< Math.floor(arr[i].length/100); i++) {
+    //         treesDOM += `<div class="tree-${[i]}"></div>`
+    //     };
+    //     treesDOM += `</div>`
+    // }
     
-    console.log(pinOakArray.length);
-    console.log(pinOakArray);
-    console.log(redMapleArray.length);
-    console.log(redMapleArray);
+    // treesDOM += `<div class="tree-container">`;
+    // for (i = 0; i < Math.floor(pinOakArray.length/100); i++) {
+    // treesDOM += `<div class="box"></div>`
+    // };
+
+    // createDivs(allArray);
+
+
+    // treesDOM += `</div>`
+
 
     console.log(allArray.length);
     console.log(allArray);
