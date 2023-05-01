@@ -143,7 +143,8 @@ fetch(url)
         }
 
         if (tree.spc_common == "London planetree") {
-            
+            londonPlanetreeArray.push(tree);
+            tree.spc_common = "london-planetree";
         }
 
         if (tree.spc_common == "ginkgo") {
