@@ -301,32 +301,213 @@ font-size: var(--body-text-size);
     margin: .025em;
 }
 
-.pin-oak { 
-    color: blue;
+.pin-oak {
+    background-color: var(--pin-oak);
 }
 
 .red-maple {
-    color: pink;
+    background-color: var(--red-maple);
 }
 
 .honeylocust {
-    color: green;
+    background-color: var(--honeylocust);
 }
 
 .american-linden {
-    color: aqua;
+    background-color: var(--american-linden);
 }
 
-.london-planetree { 
-    color: red;
+.london-planetree {
+    background-color: var(--london-planetree);
 }
 
 .ginkgo {
-    color: purple;
+    background-color: var(--ginkgo);
 }
 
+.river-birch {
+    background-color: var(--river-birch);
+}
 
+.turkish-hazelnut {
+    background-color: var(--turkish-hazelnut);
+}
 
+.hardy-rubber-tree {
+    background-color: var(--hardy-rubber-tree);
+}
+
+.european-beech {
+    background-color: var(--european-beech);
+}
+
+.kentucky-coffeetree {
+    background-color: var(--kentucky-coffeetree);
+}
+
+.sweetgum {
+    background-color: var(--sweetgum);
+}
+
+.blackgum {
+    background-color: var(--blackgum);
+}
+
+.sawtooth-oak {
+    background-color: var(--sawtooth-oak);
+}
+
+.swamp-white-oak {
+    background-color: var(--swamp-white-oak);
+}
+
+.scarlet {
+    background-color: var(--scarlet);
+}
+
+.shingle-oak {
+    background-color: var(--shingle-oak);
+}
+
+.bur-oak {
+    background-color: var(--bur-oak);
+}
+
+.willow-oak {
+    background-color: var(--willow-oak);
+}
+
+.schmuard-oak {
+    background-color: var(--schumard-oak);
+}
+
+.black-oak {
+    background-color: var(--black-oak);
+}
+
+.sophora {
+    background-color: var(--sophora);
+}
+
+.bald-cypress {
+    background-color: var(--bald-cypress);
+}
+
+.littleleaf-linden {
+    background-color: var(--littleleaf-linden);
+}
+
+.silver-linden {
+    background-color: var(--silver-linden);
+}
+
+.american-elm {
+    background-color: var(--american-elm);
+}
+
+.chinese-elm {
+    background-color: var(--chinese-elm);
+}
+
+.japanese-zelkova {
+    background-color: var(--japanese-zelkova);
+}
+
+.red-horse-chestnut {
+    background-color: var(--red-horse-chestnut);
+}
+
+.european-hornbeam {
+    background-color: var(--european-hornbeam);
+}
+
+.american-hornbeam {
+    background-color: var(--american-hornbeam);
+}
+
+.japanese-hornbeam {
+    background-color: var(--japanese-hornbeam);
+}
+
+.kentucky-yellowwood {
+    background-color: var(--kentucky-yellowwood);
+}
+
+.golden-raintree {
+    background-color: var(--golden-raintree);
+}
+
+.amur-maackia {
+    background-color: var(--amur-maackia);
+}
+
+.persian-ironwood {
+    background-color: var(--persian-ironwood);
+}
+
+.hedge-maple {
+    background-color: var(--hedge-maple);
+}
+
+.amur-maple {
+    background-color: var(--amur-maple);
+}
+
+.paperbark-maple {
+    background-color: var(--paperbark-maple);
+}
+
+.tartar-maple {
+    background-color: var(--tartar-maple);
+}
+
+.shantung-maple {
+    background-color: var(--shantung-maple);
+}
+
+.serviceberry {
+    background-color: var(--serviceberry);
+}
+
+.oklahoma-redbud {
+    background-color: var(--oklahoma-redbud);
+}
+
+.chinese-fringetree {
+    background-color: var(--chinese-fringetree);
+}
+
+.kousa-dogwood {
+    background-color: var(--kousa-dogwood);
+}
+
+.cornelian-cherry {
+    background-color: var(--cornelian-cherry);
+}
+
+.cockspur-hawthorn {
+    background-color: var(--cockspur-hawthorn);
+}
+
+.crab-apple {
+    background-color: var(--crab-apple);
+}
+
+.purple-leaf-plum {
+    background-color: var(--purple-leaf-plum);
+}
+
+.japanese-tree-lilac {
+    background-color: var(--japanese-tree-lilac);
+}
+
+.chinese-tree-lilac {
+    background-color: var(--chinese-tree-lilac);
+}
+
+.callery-pear {
+    background-color: var(--callery-pear);
+}
 
 
 
