@@ -448,6 +448,7 @@ fetch(url)
 
     // treesDOM += `</div>`
 
+/* ------------------------------------ CREATING TINY DIV VISUALIZATIONS ------------------------------------ */
 
     console.log(allArray.length);
     console.log(allArray);
