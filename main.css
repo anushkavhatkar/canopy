@@ -71,7 +71,7 @@ font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 500;
 font-style: normal;
 letter-spacing: .02em;
-font-size: var(--filter-text-size);
+font-size: var(--body-text-size);
 }
 
 
@@ -115,15 +115,18 @@ font-size: var(--filter-text-size);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1em;
+    /* gap: 1em; */
+
 }
 
 
-.tree-box { 
+.tree-container { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 40vw;
+    max-width: 42.5vw;
+    margin: .45em .1em;
+
 }
 
 .box { 
@@ -217,6 +220,14 @@ font-size: var(--filter-text-size);
 
 /* ------------------------------------ TREE SPECIES COLORS ------------------------------------ */
 
+
+
+.tiny-box {
+    display: inline-block;
+    padding: 10px;
+    margin: .025em;
+}
+
 .pin-oak { 
     color: blue;
 }
@@ -240,6 +251,12 @@ font-size: var(--filter-text-size);
 .ginkgo {
     color: purple;
 }
+
+
+
+
+
+
 
 
 /* ------------------------------------ ANIMATIONS ------------------------------------ */
