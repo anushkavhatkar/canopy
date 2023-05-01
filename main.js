@@ -15,13 +15,15 @@ let treesDOM = " ";
 /* ------------------------------------ ALL TREE SPECIES ARRAYS ------------------------------------ */
 
 let allArray = [];
+let allNativeArray = [];
+let allNonNativeArray = []; 
 
 let pinOakArray = [];
 let redMapleArray = [];
 let honeylocustArray = [];
 let americanLindenArray = [];
 let londonPlanetreeArray = [];
-let ginkgosArray = [];
+let ginkgoArray = [];
 let americanElmArray = [];
 let sophoraArray = [];
 let calleryPearArray = [];
@@ -52,12 +54,12 @@ let scarletOakArray = [];
 let burOakArray = [];
 let englishOakArray = [];
 let redOakArray = [];
-let shumardOakArray = [];
+let schumardOakArray = [];
 let blackOakArray = [];
 let baldCypressArray = [];
 let chineseElmArray = [];
 let japaneseZelkovaArray =[];
-let redHorsechestnut = [];
+let redHorsechestnutArray = [];
 let europeanHornbeamArray = [];
 let americanHornbeamArray = [];
 let japaneseHornbeamArray = [];
@@ -80,6 +82,7 @@ let crabappleArray = [];
 let purpleLeafPlumArray = [];
 let japaneseTreeLilacArray = [];
 let chineseTreeLilacArray = [];
+let oklahomaRedbudArray = [];
 
 
 
