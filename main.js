@@ -451,6 +451,15 @@ fetch(url)
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS ------------------------------------ */
 
 
+    // console.log(pinOakArray.length);
+    // console.log(pinOakArray);
+    // console.log(redMapleArray.length);
+    // console.log(redMapleArray);
+
+    // console.log(allArray.length);
+    // console.log(allArray);
+
+    // console.log(treesDOM);
     
   });
 
