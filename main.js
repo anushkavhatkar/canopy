@@ -389,7 +389,7 @@ fetch(url)
     });
 
 
-    treesDOM += `<div class="tree-box">`;
+   
 
     
     
