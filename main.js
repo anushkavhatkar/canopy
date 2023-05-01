@@ -450,10 +450,7 @@ fetch(url)
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS ------------------------------------ */
 
-    console.log(allArray.length);
-    console.log(allArray);
 
-    console.log(treesDOM);
     
   });
 
