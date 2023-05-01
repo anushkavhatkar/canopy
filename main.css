@@ -175,30 +175,7 @@ font-size: var(--body-text-size);
 
 }
 
-#container { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* gap: 1em; */
 
-}
-
-
-.tree-container { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 42.5vw;
-    margin: .45em .1em;
-
-}
-
-.box { 
-    display: inline-block;
-    background-color: var(--native-two);
-    padding: 10px;
-    margin: .025em;
-}
 
 /* ------------------------------------ FILTER BUTTONS AND HOVER ------------------------------------ */
 
@@ -278,7 +255,39 @@ font-size: var(--body-text-size);
 }
 
 
-/* ------------------------------------ UTILITIES ------------------------------------ */
+/* ------------------------------------ VISUALISATION STYLING ------------------------------------ */
+
+#container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 1em; */
+
+}
+
+.viz-container { 
+    display: flex;
+    flex-direction: column;
+    width: 42.5vw;
+    margin: .45em .1em;
+}
+
+.tree-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* max-width: 42.5vw;
+    margin: .45em .1em; */
+
+}
+
+.box { 
+    display: inline-block;
+    background-color: var(--native-two);
+    padding: 10px;
+    margin: .025em;
+}
+
 
 
 
