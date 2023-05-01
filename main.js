@@ -401,12 +401,23 @@ fetch(url)
 
 
 
+/* ------------------------------------ SORTING ARRAYS BY PERCENTAGE ------------------------------------ */
+
+    const sorter = (a, b) => {
+        if(a.length > b.length) {
+           return -1;
+        } else {
+           return 1;
+        }
+    }
     
-    for (i = 0; i < Math.floor(pinOakArray.length/100); i++) {
-    treesDOM += `<div class="box"></div>`
-    };
+    allArray.sort(sorter);
+    allNativeArray.sort(sorter);
+    allNonNativeArray.sort(sorter);
 
 
+    
+    console.log(allArray); 
 
     treesDOM += `</div>`
 
