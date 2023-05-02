@@ -8,9 +8,13 @@ const LIMIT = 580000;
 
 let treesDOM = " ";
 
+let nativeTreesDOM = " "; 
 
+let nonNativeTreesDOM = " ";
 
+let nativeFilterBtn = document.querySelector('#native-filter');
 
+let nonNativeFilterBtn = document.querySelector('#non-native-filter');
 
 let percentageFilterBtn = document.querySelector('#percentage-filter');
 
