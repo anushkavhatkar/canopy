@@ -167,43 +167,43 @@ fetch(url)
         delete tree.nta_name;
 
         if (tree.spc_common == "pin oak") {
-            pinOakArray.push(tree);
             tree.spc_common = "pin-oak";
             tree.spc_common_name = "Pin Oak";
+            pinOakArray.push(tree);
         }
 
         if (tree.spc_common == "Callery pear") {
-            calleryPearArray.push(tree);
             tree.spc_common = "callery-pear";
             tree.spc_common_name = "Callery Pear";
+            calleryPearArray.push(tree);
         }
 
         if (tree.spc_common == "red maple") {
-            redMapleArray.push(tree);
             tree.spc_common = "red-maple";
             tree.spc_common_name = "Red Maple";
+            redMapleArray.push(tree);
         }
 
         if (tree.spc_common == "honeylocust") {
-            honeylocustArray.push(tree);
             tree.spc_common_name = "Honeylocust";
+            honeylocustArray.push(tree);
         }
 
         if (tree.spc_common == "American linden") {
-            americanLindenArray.push(tree);
             tree.spc_common = "american-linden";
             tree.spc_common_name = "American Linden";
+            americanLindenArray.push(tree);
         }
 
         if (tree.spc_common == "London planetree") {
-            londonPlanetreeArray.push(tree);
             tree.spc_common = "london-planetree";
             tree.spc_common_name = "London Planetree";
+            londonPlanetreeArray.push(tree);
         }
 
         if (tree.spc_common == "ginkgo") {
-            ginkgoArray.push(tree);
             tree.spc_common_name = "Ginkgo";
+            ginkgoArray.push(tree);
         }
 
         // if (tree.spc_common == "horse chestnut") {
@@ -211,279 +211,279 @@ fetch(url)
         // }
 
         if (tree.spc_common == "river birch") {
-            riverBirchArray.push(tree);
             tree.spc_common = "river-birch";
             tree.spc_common_name = "River Birch";
+            riverBirchArray.push(tree);
         }
         
         if (tree.spc_common == "Turkish hazelnut") {
-            turkishHazelnutArray.push(tree);
             tree.spc_common = "turkish-hazelnut";
             tree.spc_common_name = "Turkish Hazelnut";
+            turkishHazelnutArray.push(tree);
         }
 
         if (tree.spc_common == "hardy rubber tree") {
-            hardyRubberTreeArray.push(tree);
             tree.spc_common = "hardy-rubber-tree";
             tree.spc_common_name = "Hardy Rubber Tree";
+            hardyRubberTreeArray.push(tree);
         }
 
         if (tree.spc_common == "European beech") {
-            europeanBeechArray.push(tree);
             tree.spc_common = "european-beech";
             tree.spc_common_name = "European Beech";
+            europeanBeechArray.push(tree);
         }
 
         if (tree.spc_common == "Kentucky coffeetree") {
-            kentuckyCoffeetreeArray.push(tree);
             tree.spc_common = "kentucky-coffeetree";
             tree.spc_common_name = "Kentucky Coffeetree";
+            kentuckyCoffeetreeArray.push(tree);
         }
 
         if (tree.spc_common == "sweetgum") {
-            sweetgumArray.push(tree);
             tree.spc_common_name = "Sweetgum";
+            sweetgumArray.push(tree);
         }
 
         if (tree.spc_common == "tulip-poplar") {
-            tulipTreeArray.push(tree);
             tree.spc_common_name = "Tulip Poplar";
+            tulipTreeArray.push(tree);
         }
 
         if (tree.spc_common == "blackgum") {
-            blackgumArray.push(tree);
             tree.spc_common_name = "Blackgum";
+            blackgumArray.push(tree);
         }
 
         if (tree.spc_common == "sawtooth oak") {
-            sawtoothOakArray.push(tree);
             tree.spc_common = "sawtooth-oak";
             tree.spc_common_name = "Sawtooth Oak";
+            sawtoothOakArray.push(tree);
         }
 
         if (tree.spc_common == "swamp white oak") {
-            swampWhiteOakArray.push(tree);
             tree.spc_common = "swamp-white-oak";
             tree.spc_common_name = "Swamp White Oak";
+            swampWhiteOakArray.push(tree);
         }
         
         if (tree.spc_common == "scarlet") {
-            scarletOakArray.push(tree);
             tree.spc_common_name = "Scarlet Oak";
+            scarletOakArray.push(tree);
         }
 
         if (tree.spc_common == "shingle oak") {
-            shingleOakArray.push(tree);
             tree.spc_common = "shingle-oak";
             tree.spc_common_name = "Shingle Oak";
+            shingleOakArray.push(tree);
         }
 
         if (tree.spc_common == "bur oak") {
-            burOakArray.push(tree);
             tree.spc_common = "bur-oak";
             tree.spc_common_name = "Bur Oak";
+            burOakArray.push(tree);
         }
 
         if (tree.spc_common == "willow oak") {
-            willowOakArray.push(tree);
             tree.spc_common = "willow-oak";
             tree.spc_common_name = "Willow Oak";
+            willowOakArray.push(tree);
         }
 
         if (tree.spc_common == "schumard's oak") {
-            schumardOakArray.push(tree);
             tree.spc_common = "schumard-oak";
             tree.spc_common_name = "Schumard's Oak";
+            schumardOakArray.push(tree);
         }
 
         if (tree.spc_common == "black oak") {
-            blackOakArray.push(tree);
             tree.spc_common = "black-oak";
             tree.spc_common_name = "Black Oak";
+            blackOakArray.push(tree);
         }
         
         if (tree.spc_common == "sophora") {
-            sophoraArray.push(tree);
             tree.spc_common_name = "Sophora Oak";
+            sophoraArray.push(tree);
         }
         
         if (tree.spc_common == "bald cypress") {
-            baldCypressArray.push(tree);
             tree.spc_common = "bald-cypress";
             tree.spc_common_name = "Bald Cypress";
+            baldCypressArray.push(tree);
         }
 
         if (tree.spc_common == "littleleaf linden") {
-            littleleafLindenArray.push(tree);
             tree.spc_common = "littleleaf-linden";
             tree.spc_common_name = "Littleleaf Linden";
+            littleleafLindenArray.push(tree);
         }
 
         if (tree.spc_common == "silver linden") {
-            silverLindenArray.push(tree);
             tree.spc_common = "silver-linden";
             tree.spc_common_name = "Silver Oak";
+            silverLindenArray.push(tree);
         }
 
         if (tree.spc_common == "american elm") {
-            americanElmArray.push(tree);
             tree.spc_common = "American Elm";
+            americanElmArray.push(tree);
         }
 
         if (tree.spc_common == "chinese elm") {
-            chineseElmArray.push(tree);
             tree.spc_common = "chinese-elm";
             tree.spc_common_name = "Chinese Elm";
+            chineseElmArray.push(tree);
         }
 
         if (tree.spc_common == "Japanese zelkova") {
-            japaneseZelkovaArray.push(tree);
             tree.spc_common = "japanese-zelkova";
             tree.spc_common_name = "Japanese Zelkova";
+            japaneseZelkovaArray.push(tree);
         }
 
         if (tree.spc_common == "red horse chestnut") {
-            redHorsechestnutArray.push(tree);
             tree.spc_common = "red-horse-chestnut";
             tree.spc_common_name = "Red Horse Chestnut";
+            redHorsechestnutArray.push(tree);
+
         }
 
         if (tree.spc_common == "european hornbeam") {
-            europeanHornbeamArray.push(tree);
             tree.spc_common = "european-hornbeam";
             tree.spc_common_name = "European Hornbeam";
         }
 
         if (tree.spc_common == "american hornbeam") {
-            americanElmArray.push(tree);
             tree.spc_common = "american-hornbeam";
             tree.spc_common_name = "American Hornbeam";
+            americanElmArray.push(tree);
         }
 
         if (tree.spc_common == "japanese hornbeam") {
-            japaneseHornbeamArray.push(tree);
             tree.spc_common = "japanese-hornbeam";
             tree.spc_common_name = "Japanese Hornbeam";
+            japaneseHornbeamArray.push(tree);
         }
 
         if (tree.spc_common == "Kentucky yellowwood") {
-            kentuckyCoffeetreeArray.push(tree);
             tree.spc_common = "kentucky-yellowwood";
             tree.spc_common_name = "Kentucky Yellowwood";
+            kentuckyCoffeetreeArray.push(tree);
         }
 
         if (tree.spc_common == "golden raintree") {
-            goldenRaintreeArray.push(tree);
             tree.spc_common = "golden-raintree";
             tree.spc_common_name = "Golden Raintree";
+            goldenRaintreeArray.push(tree);
         }
 
         if (tree.spc_common == "Amur maackia") {
-            amurMaackiaArray.push(tree);
             tree.spc_common = "amur-maackia";
             tree.spc_common_name = "Amur Maackia";
+            amurMaackiaArray.push(tree);
         }
         
         if (tree.spc_common == "Persian ironwood") {
-            persianIronwoodArray.push(tree);
             tree.spc_common = "persian-ironwood";
             tree.spc_common_name = "Persian Ironwood";
+            persianIronwoodArray.push(tree);
         }
 
         if (tree.spc_common == "hedge maple") {
-            hedgeMapleArray.push(tree);
             tree.spc_common = "hedge-maple";
             tree.spc_common_name = "Hedge Maple";
+            hedgeMapleArray.push(tree);
         }
 
         if (tree.spc_common == "amur maple") {
-            amurMapleArray.push(tree);
             tree.spc_common = "amur-maple";
             tree.spc_common_name = "Amur Maple";
+            amurMapleArray.push(tree);
         }
 
         if (tree.spc_common == "paperbark maple") {
-            paperbarkMapleArray.push(tree);
             tree.spc_common = "paperbark-maple";
             tree.spc_common_name = "Paperbark Maple";
+            paperbarkMapleArray.push(tree);
         }
 
         if (tree.spc_common == "tartar maple") {
-            tartarMapleArray.push(tree);
             tree.spc_common = "tartar-maple";
             tree.spc_common_name = "Tartar Maple";
+            tartarMapleArray.push(tree);
         }
 
         if (tree.spc_common == "shantung maple") {
-            shantungMapleArray.push(tree);
             tree.spc_common = "shantung-maple";
             tree.spc_common_name = "Shantung Maple";
+            shantungMapleArray.push(tree);
         }
 
         if (tree.spc_common == "serviceberry") {
-            serviceberryArray.push(tree);
             tree.spc_common_name = "Serviceberry";
+            serviceberryArray.push(tree);
         }
 
         if (tree.spc_common == "Oklahoma redbud") {
-            redbudArray.push(tree);
             tree.spc_common = "oklahoma-redbud";
             tree.spc_common_name = "Oklahoma Redbud";
+            redbudArray.push(tree);
         }
 
         if (tree.spc_common == "Chinese fringetree") {
-            chineseFringetreeArray.push(tree);
             tree.spc_common = "chinese-fringetree";
             tree.spc_common_name = "Chinese Fringetree";
+            chineseFringetreeArray.push(tree);
         }
 
         if (tree.spc_common == "kousa dogwood") {
-            kousaDogwoodArray.push(tree);
             tree.spc_common = "kousa-dogwood";
             tree.spc_common_name = "Kousa Dogwood";
+            kousaDogwoodArray.push(tree);
         }
 
         if (tree.spc_common == "cornelian cherry") {
-            cornelianCherryArray.push(tree);
             tree.spc_common = "cornelian-cherry";
             tree.spc_common_name = "Cornelian Cherry";
+            cornelianCherryArray.push(tree);
         }
 
         if (tree.spc_common == "cockspur hawthorn") {
-            cockspurHawthornArray.push(tree);
             tree.spc_common = "cockspur-hawthorn";
             tree.spc_common_name = "Cockspur Hawthorn";
+            cockspurHawthornArray.push(tree);
         }
 
         if (tree.spc_common == "crab apple") {
-            crabappleArray.push(tree);
             tree.spc_common = "crab-apple";
             tree.spc_common_name = "Crab Apple";
+            crabappleArray.push(tree);
         }
 
 
         if (tree.spc_common == "purple-leaf plum") {
-            purpleLeafPlumArray.push(tree);
             tree.spc_common = "purple-leaf-plum";
             tree.spc_common_name = "Purple Leaf Plum";
+            purpleLeafPlumArray.push(tree);
         }
 
         if (tree.spc_common == "Japanese tree lilac") {
-            japaneseTreeLilacArray.push(tree);
             tree.spc_common = "japanese-tree-lilac";
             tree.spc_common_name = "Japanese Tree Lilac";
+            japaneseTreeLilacArray.push(tree);
         }
 
         if (tree.spc_common == "Chinese tree lilac") {
-            chineseTreeLilacArray.push(tree);
             tree.spc_common = "chinese-tree-lilac";
             tree.spc_common_name = "Chinese Tree Lilac";
+            chineseTreeLilacArray.push(tree);
         }
 
         if (tree.spc_common == "Oklahoma redbud") {
-            chineseTreeLilacArray.push(tree);
             tree.spc_common = "oklahoma-redbud";
             tree.spc_common_name = "Oklahoma Redbud";
+            chineseTreeLilacArray.push(tree);
         }
 
 
