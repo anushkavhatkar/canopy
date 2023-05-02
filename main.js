@@ -594,6 +594,33 @@ fetch(url)
     // console.log(allArray);
 
     // console.log(treesDOM);
+
+    nativeFilterBtn.addEventListener("click", function() {
+        nativeTreesDOM = "";
+        // mainContainer.innerHTML = " ";
+        
+        function createNativeDivs(arr) { 
+            for (let k=0; k < arr[k].length; k++) {
+
+                nativeTreesDOM += `<div class="viz-container">`;
+                nativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
+    
+                nativeTreesDOM += `<div class="tree-container">`;
+    
+                for (let l=0; l <Math.floor(arr[k].length/100); l++) {
+                    nativeTreesDOM += `<div class="tiny-box ${arr[k][k].spc_common}"></div>`
+                };
+    
+                nativeTreesDOM += `</div>`
+                nativeTreesDOM += `</div>`
+            }
+        };
+    
+        createNativeDivs(allNativeArray);
+    
+        mainContainer.innerHTML = nativeTreesDOM;
+    
+    });
     
   });
 
