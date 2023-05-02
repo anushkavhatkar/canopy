@@ -576,6 +576,15 @@ fetch(url)
 
     mainContainer.innerHTML = treesDOM;
 
+    percentageFilterBtn.addEventListener("click", function() {
+
+        treesDOM = "";
+        createTheDivs(allArray);
+
+        mainContainer.innerHTML = treesDOM;
+
+    });
+
     // console.log(pinOakArray.length);
     // console.log(pinOakArray);
     // console.log(redMapleArray.length);
