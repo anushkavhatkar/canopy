@@ -621,7 +621,43 @@ fetch(url)
         mainContainer.innerHTML = nativeTreesDOM;
     
     });
+
+    nonNativeFilterBtn.addEventListener("click", function() {
+        nonNativeTreesDOM = "";
+        
+        function createNonNativeDivs(arr) { 
+            for (let k=0; k < arr[k].length; k++) {
+
+                nonNativeTreesDOM += `<div class="viz-container">`;
+                nonNativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
     
+                nonNativeTreesDOM += `<div class="tree-container">`;
+    
+                for (let l=0; l <Math.floor(arr[k].length/100); l++) {
+                    nonNativeTreesDOM += `<div class="tiny-box ${arr[k][k].spc_common}"></div>`
+                };
+    
+                nonNativeTreesDOM += `</div>`
+                nonNativeTreesDOM += `</div>`
+            }
+        };
+    
+        createNonNativeDivs(allNonNativeArray);
+    
+        mainContainer.innerHTML = nonNativeTreesDOM;
+    
+    });
+
+
+    
+    
+
+
+
+
+
+
+
   });
 
 
