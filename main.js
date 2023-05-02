@@ -556,6 +556,10 @@ fetch(url)
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
 
+    function randomColor(arr){
+    return arr[Math.floor(Math.random()*arr.length)]
+    };
+
     function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
             // treesDOM += `<p class="body-text">${[i]}</p>`
@@ -625,6 +629,7 @@ fetch(url)
     nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeTreesDOM = "";
         
+        
         function createNonNativeDivs(arr) { 
             for (let k=0; k < arr[k].length; k++) {
 
@@ -649,9 +654,30 @@ fetch(url)
     });
 
 
-    
-    
+    // #region FILTER TAB HOVER AND CLICK PROPERTIES
 
+    nativeFilterBtn.addEventListener("mouseover", function() {
+        nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    })
+    
+    
+    nativeFilterBtn.addEventListener("mouseleave", function() {
+        nativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    })
+
+    nonNativeFilterBtn.addEventListener("mouseover", function() {
+        nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
+    })
+    
+    
+    nonNativeFilterBtn.addEventListener("mouseleave", function() {
+        nonNativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    })
+
+
+    // #endregion
+
+ 
 
 
 

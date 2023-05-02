@@ -152,6 +152,7 @@ font-size: var(--body-text-size);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .filter-bar { 
@@ -222,6 +223,7 @@ font-size: var(--body-text-size);
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
+    background-color: var(--light-white);
 
     transition-duration: .15s, .15s;
 	transition-property: background-color, transform;
@@ -235,6 +237,7 @@ font-size: var(--body-text-size);
     border: black solid .075em;
     border-radius: .5em;
     width: max-content;
+    background-color: var(--light-white);
 
     transition-duration: .15s, .15s;
 	transition-property: background-color, transform;
