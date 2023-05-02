@@ -109,11 +109,13 @@ let treeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "
 
 /* ------------------------------------  API FETCH  ------------------------------------ */
 
+// #region URL CONSTRUCT
+
 const url = `https://data.cityofnewyork.us/resource/${DATASET_IDENTIFIER}.json?$$app_token=${APP_TOKEN}&$limit=${LIMIT}`;
 
 
 console.log(`Fetching url - ${url}`);
-
+// #endregion
 
 fetch(url)
   .then((response) => response.json())
@@ -496,7 +498,8 @@ fetch(url)
 
    
 
-    
+    // #region --------------------- ARRAY CONSTRUCTION - ALL, NATIVE, NON NATIVE --------------------- 
+   
 
     allArray.push(pinOakArray, redMapleArray, honeylocustArray, americanLindenArray, londonPlanetreeArray, ginkgoArray, americanElmArray, sophoraArray, calleryPearArray, littleleafLindenArray, fastigiataOakArray, sweetgumArray, dawnRedwoodArray, baldcypressArray, coffeetreesArray, northernRedOakArray, swampWhiteOakArray, shingleOakArray, willowOakArray, crimeanLindenArray, silverLindenArray, riverBirchArray, hackberryArray, katsuraTreeArray, turkishHazelnutArray, hardyRubberTreeArray, europeanBeechArray, kentuckyCoffeetreeArray, tulipTreeArray, blackgumArray, sawtoothOakArray, whiteOakArray, scarletOakArray, burOakArray, englishOakArray, redOakArray, schumardOakArray, blackOakArray, baldCypressArray, chineseElmArray, japaneseZelkovaArray, redHorsechestnutArray, europeanHornbeamArray, americanHornbeamArray, japaneseHornbeamArray, kentuckyYellowwoodArray, goldenRaintreeArray, amurMaackiaArray, persianIronwoodArray, hedgeMapleArray,amurMapleArray, paperbarkMapleArray, tartarMapleArray, shantungMapleArray, serviceberryArray, redbudArray, chineseFringetreeArray, kousaDogwoodArray, cornelianCherryArray, cockspurHawthornArray, crabappleArray, purpleLeafPlumArray, japaneseTreeLilacArray, chineseTreeLilacArray);
 
@@ -504,7 +507,10 @@ fetch(url)
 
     allNonNativeArray.push(turkishHazelnutArray, hardyRubberTreeArray, europeanBeechArray, turkishHazelnutArray, ginkgoArray, londonPlanetreeArray, sophoraArray, chineseElmArray, japaneseZelkovaArray, redHorsechestnutArray, europeanHornbeamArray, japaneseHornbeamArray, kentuckyYellowwoodArray, goldenRaintreeArray, amurMaackiaArray, persianIronwoodArray, hedgeMapleArray, amurMapleArray, paperbarkMapleArray, tartarMapleArray, shantungMapleArray, serviceberryArray, chineseFringetreeArray, kousaDogwoodArray, cornelianCherryArray, cockspurHawthornArray, crabappleArray, purpleLeafPlumArray, japaneseTreeLilacArray, chineseTreeLilacArray);
 
+     // #endregion
 
+
+// #region --------------------- SORT ARRAYS BY PERCENTAGE ---------------------
 
 /* ------------------------------------ SORTING ARRAYS BY PERCENTAGE ------------------------------------ */
     
@@ -519,11 +525,15 @@ fetch(url)
     allArray.sort(sorter);
     allNativeArray.sort(sorter);
     allNonNativeArray.sort(sorter);
-
+// #endregion
 
     
     console.log(allArray); 
     console.log(allNativeArray);
+
+
+    // #region --------------------- VISUALIZATION CREATION TRIALS ---------------------
+    
 
     // allArray.forEach(function createDivs() {
     //     treesDOM += `<div class="tree-container">`;
@@ -553,6 +563,8 @@ fetch(url)
 
 
     // treesDOM += `</div>`
+
+    // #endregion
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
 
@@ -598,6 +610,9 @@ fetch(url)
     // console.log(allArray);
 
     // console.log(treesDOM);
+
+// #region --------------------- FILTERING THROUGH DATA INTERACTION + VISUALISATION ---------------------
+
 
     nativeFilterBtn.addEventListener("click", function() {
         nativeTreesDOM = "";
@@ -652,20 +667,23 @@ fetch(url)
         mainContainer.innerHTML = nonNativeTreesDOM;
     
     });
+// #endregion 
 
-
-    // #region FILTER TAB HOVER AND CLICK PROPERTIES
+// #region --------------------- FILTER TAB HOVER AND CLICK PROPERTIES ---------------------
 
     nativeFilterBtn.addEventListener("mouseover", function() {
         nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
     })
     
-    
+    nativeFilterBtn.addEventListener("click", function() {
+        nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    })
+
     nativeFilterBtn.addEventListener("mouseleave", function() {
         nativeFilterBtn.style.backgroundColor = "var(--light-white)";
     })
 
-    nonNativeFilterBtn.addEventListener("mouseover", function() {
+    nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
     })
     
@@ -683,7 +701,7 @@ fetch(url)
 
 
 
-
+// THEN RESPONSE FIN
   });
 
 
