@@ -507,8 +507,8 @@ fetch(url)
 
 
 /* ------------------------------------ SORTING ARRAYS BY PERCENTAGE ------------------------------------ */
-
-    const sorter = (a, b) => {
+    
+    let sorter = (a, b) => {
         if(a.length > b.length) {
            return -1;
         } else {
@@ -523,6 +523,7 @@ fetch(url)
 
     
     console.log(allArray); 
+    console.log(allNativeArray);
 
     // allArray.forEach(function createDivs() {
     //     treesDOM += `<div class="tree-container">`;
@@ -553,7 +554,7 @@ fetch(url)
 
     // treesDOM += `</div>`
 
-/* ------------------------------------ CREATING TINY DIV VISUALIZATIONS ------------------------------------ */
+/* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
 
     function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
