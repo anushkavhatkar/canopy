@@ -69,8 +69,8 @@ function size(){
       let mouseX = e.clientX;
       let mouseY = e.clientY;
     
-      hoverText.style.top = mouseX + "px";
-      hoverText.style.left = mouseY + "px";
+      hoverText.style.top = e.clientX + "px";
+      hoverText.style.left = e.clientY + "px";
       
     });
     
