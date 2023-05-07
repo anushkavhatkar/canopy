@@ -575,7 +575,7 @@ fetch(url)
     function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
             // treesDOM += `<p class="body-text">${[i]}</p>`
-            treesDOM += `<div class="viz-container">`;
+            treesDOM += `<div class="viz-container reveal active">`;
             treesDOM += `<p class="body-text">${arr[i][i].spc_common_name}</p>`;
             treesDOM += `<div class="tree-container">`;
 
@@ -621,7 +621,7 @@ fetch(url)
         function createNativeDivs(arr) { 
             for (let k=0; k < arr[k].length; k++) {
 
-                nativeTreesDOM += `<div class="viz-container">`;
+                nativeTreesDOM += `<div class="viz-container reveal active">`;
                 nativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
     
                 nativeTreesDOM += `<div class="tree-container">`;
@@ -648,7 +648,7 @@ fetch(url)
         function createNonNativeDivs(arr) { 
             for (let k=0; k < arr[k].length; k++) {
 
-                nonNativeTreesDOM += `<div class="viz-container">`;
+                nonNativeTreesDOM += `<div class="viz-container reveal active">`;
                 nonNativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
     
                 nonNativeTreesDOM += `<div class="tree-container">`;
@@ -696,8 +696,29 @@ fetch(url)
     // #endregion
 
  
+// #region SMOOTH SCROLL FUNCTION
+
+// function reveal() {
+//     var reveals = document.querySelectorAll(".reveal");
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 150;
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("active");
+//       } else {
+//         reveals[i].classList.remove("active");
+//       }
+//     }
+//   }
 
 
+// window.addEventListener("scroll", reveal);
+
+// // To check the scroll position on page load
+// reveal();
+
+// #endregion
 
 
 
