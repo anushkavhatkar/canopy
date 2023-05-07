@@ -528,6 +528,21 @@ font-size: var(--body-text-size);
 
 /* #endregion */
 
+/* #region  SMOOTH SCROLL ANIMATION */
+
+/* .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: .75s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  } */
+
+
+/* #endregion */
 
 /* #region ------------------------------------ MEDIA QUERIES ------------------------------------ */
 
