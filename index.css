@@ -1,3 +1,141 @@
+/* #region ------------------------------------ ROOT VARIABLES  ------------------------------------ */
+
+:root {
+  --black: #000000; 
+  --white: #ffffff;
+  --light-white: #F1F0ED; 
+  --middle-grey: #888888;
+  --light-grey: #D0D0D0;
+  
+  /* --native-one: #01AF5A;
+  --native-two: #C9E518;
+  --native-three: #EBEE6D;
+  --native-four: #6AFBA4;
+  --native-five: #5DD8B3;
+  --native-six: #00CF08; 
+
+  --non-one: #315B51;
+  --non-two: #4C7345;
+  --non-three: #758C6A;
+  --non-four: #758C6A;  */
+
+  --red-maple: #2C4A43; 
+  --river-birch: #005E2B;
+  --honeylocust: #143514; 
+  --kentucky-coffeetree: #428400;
+  --sweetgum: #52762F;
+  --tulip-poplar: #1D6249;
+  --blackgum: #415C1E;
+  --sawtooth-oak: #3D4A08; 
+  --swamp-white-oak: #325F1E;
+  --scarlet: #70903C; 
+  --shingle-oak: #4C7345; 
+  --bur-oak: #327B10;
+  --willow-oak: #004006;
+  --american-linden: #697A02;
+  --littleleaf-linden: #3F4420; 
+  --silver-linden: #707649; 
+  --american-elm: #758C6A; 
+  --american-hornbeam: #394026; 
+  --black-oak: #21590D; 
+  --schumard-oak: #145033;
+  --bald-cypress: #293A18; 
+  --pin-oak: #2B4D32;
+
+
+  --turkish-hazelnut: #2ADB31;
+  --hardy-rubber-tree: #B3ED39;
+  --european-beech: #D5F21F;
+  --ginkgo: #ACEB44;
+  --london-planetree: #02E34F;
+  --sophora: #00CE78; 
+  --chinese-elm: #0AFA5C;
+  --japanese-zelkova: #0CF090;
+  --red-horse-chestnut: #DBFF00;
+  --european-hornbeam: #80FF00;
+  --japanese-hornbeam: #00FFA3;
+  --kentucky-yellowwood: #6AFBA4;
+  --golden-raintree: #5DD8B3;
+  --amur-maackia: #00CF08;
+  --persian-ironwood: #C9E518;
+  --hedge-maple: #EBEE6D;
+  --amur-maple: #01AF5A;
+  --paperbark-maple: #00FF19;
+  --tartar-maple: #20E0A6;
+  --shantung-maple: #20E084;
+  --serviceberry: #6BEE90;
+  --oklahoma-redbud: #B3ECB2;
+  --chinese-fringetree: #76DAA4;
+  --kousa-dogwood: #5CE05A;
+  --cornelian-cherry: #00FF75;
+  --cockspur-hawthorn: #91FF8E;
+  --crab-apple: #B0FF62;
+  --purple-leaf-plum: #93FF26;
+  --japanese-tree-lilac: #D8FAA0;
+  --chinese-tree-lilac: #CDFF7A; 
+  --callery-pear: #14B87D; 
+  
+
+
+
+
+
+
+
+
+  --header-text-size: 24px;
+  --filter-text-size: 18px;
+  --body-text-size: 16px;
+}
+
+/* #endregion */
+
+/* #region ------------------------------------ TYPOGRAPHY ------------------------------------  */
+
+.header { 
+  font-family: shift, serif;
+  font-weight: 100;
+  font-size: var(--header-text-size);
+  color: var(--black);
+  }
+  
+  .header:hover { 
+      font-family: shift, serif;
+      font-weight: 100;
+      font-size: var(--header-text-size);
+      color: var(--middle-grey);
+      cursor: pointer;
+  }
+  
+  .header-italic { 
+  font-family: shift, serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: var(--header-text-size);
+  }
+  
+  .filter-text { 
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: .02em;
+  font-size: var(--filter-text-size);
+  }
+  
+  .body-text { 
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: .02em;
+  font-size: var(--body-text-size);
+  }
+  
+  /* #endregion */
+  
+
+
+
+
 html,body{
   width:100%;
   height:100%;
@@ -13,3 +151,17 @@ html,body{
   display:inline-block;
   background-color:grey;
 };
+
+
+#hover-native { 
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: .02em;
+  font-size: calc(var(--filter-text-size) * 2);
+  z-index: 9;
+  color: var(--light-white);
+  position: absolute;
+  cursor: crosshair;
+}
+
