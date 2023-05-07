@@ -53,14 +53,6 @@ function size(){
 
   hoverText.innerHTML = "Native";
     
-    document.addEventListener("mousemove", function(e){
-	let mouseX = e.clientX;
-	let mouseY = e.clientY
-
-  hoverText.style.top = mouseX + "px";
-  hoverText.style.left = mouseY + "px";
-  
-});
 
     box.addEventListener("mouseover", () => {
         if (nativeColorsArray.includes(randColor)) {
@@ -71,6 +63,15 @@ function size(){
             hoverText.innerHTML = "";
             hoverText.innerHTML = "Non-Native";
         }
+    });
+    
+    document.addEventListener("mousemove", function(e){
+      let mouseX = e.clientX;
+      let mouseY = e.clientY;
+    
+      hoverText.style.top = mouseX + "px";
+      hoverText.style.left = mouseY + "px";
+      
     });
     
     
