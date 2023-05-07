@@ -17,7 +17,7 @@ let treeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "
 
 // #region -------------------------------- CANOPY RANDOMIZER --------------------------------
 
-let mainContainer = document.querySelector('#container');
+// let container = document.querySelector('#container');
 
 window.addEventListener('load',function(){
 	size();
