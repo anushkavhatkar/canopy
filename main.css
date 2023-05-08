@@ -360,15 +360,36 @@ border-bottom: .1em black solid;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-right: .45em;
+    background-color: var(--light-white);
+
+}
+
+.viz-container:hover {
+    cursor: zoom-in;
+}
+
+.info-block { 
+    overflow: hidden;
+    height: 0;
+    transition: height .45s ease-in-out ;
+    
+}
+
+
+.info-block-active { 
+    overflow: hidden;
 }
 
 .info-flex {
-    /* display: flex; */
+    
     flex-direction: row;
     padding: .5em 0em;
-    height: 18em;
+    
     gap: .5em;
-    display: none;
+    display: flex;
+    position: static;
+    
+    
 }
 
 .info-img {
@@ -391,7 +412,8 @@ border-bottom: .1em black solid;
     margin-top: .25em;
     /* max-width: 42.5vw;
     margin: .45em .1em; */
-
+    position: static;
+    transition: transform .25s ease-out ;
 }
 
 .tiny-box {
