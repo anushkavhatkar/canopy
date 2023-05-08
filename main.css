@@ -186,8 +186,39 @@ font-size: var(--body-text-size);
 
 /* #region --------------------------------- FILTER BUTTONS AND HOVER ---------------------------------*/
 
-
 .info-btn { 
+    padding: .35em .75em;
+    background-color: var(--light-white);
+    border: var(--light-white) solid .075em;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.filter-btn { 
+    margin: 0 .35em;
+    padding: .35em .75em;
+    background-color: var(--light-white);
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+
+    transition: ease-in-out .25s
+}
+
+.filter-btn:hover {
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* #region OLD FILTER CSS PROPERTIES */
+
+
+/* .info-btn { 
     padding: .35em .75em;
     background-color: var(--light-white);
     border: var(--light-white) solid .075em;
@@ -263,10 +294,52 @@ font-size: var(--body-text-size);
     border: var(--light-white) solid .075em;
     background-color: var(--native-one);
     cursor: pointer;
-}
+} */
+/* #endregion */
+
 
 /* #endregion */
 
+/* #region KEY LEGEND STYLING */
+
+.key-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7.5em;
+    position:sticky;
+}
+
+
+/* #percentage-filter:hover #non-native-filter:hover #native-filter:hover {
+border-bottom: .1em black solid;
+} */
+
+span:hover {
+    text-decoration: underline;
+}
+
+.sub-filters-flex {
+    display: flex;
+}
+
+.sub-filter {
+    margin: 0.5em .5em .5em 0;
+    padding: .35em .75em;
+    background-color: var(--light-white);
+    border: black solid .075em;
+    border-radius: .5em;
+    width: max-content;
+    transition: ease-in-out .25s;
+}
+
+.sub-filter:hover {
+    background-color: var(--light-grey);
+    
+    cursor: pointer;
+}
+
+/* #endregion */
 
 /* #region ------------------------------------ VISUALISATION STYLING ------------------------------------ */
 
@@ -275,7 +348,7 @@ font-size: var(--body-text-size);
     flex-direction: row;
     flex-wrap: wrap;
     /* gap: 1em; */
-    margin-top: 7.5em;
+    margin-top: 2.5em;
 
 }
 
@@ -309,11 +382,6 @@ font-size: var(--body-text-size);
 
 /* #region ------------------------------------  TREE SPECIES COLORS ------------------------------------*/
 
-
-
-.pin-oak {
-    background-color: var(--pin-oak);
-}
 
 
 .pin-oak {
