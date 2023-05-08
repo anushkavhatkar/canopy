@@ -591,6 +591,35 @@ fetch(url)
             // treesDOM += `<p class="body-text">${[i]}</p>`
             treesDOM += `<div class="viz-container">`;
             treesDOM += `<p class="body-text">${arr[i][i].spc_common_name}</p>`;
+
+            // INFO 
+            treesDOM += `<div class="info-flex">`;
+            treesDOM += `<div class="info-img"></div>`;
+            treesDOM += `<div class="info-img"></div>`;
+
+            treesDOM += `<div class="info-container body-text">`
+            treesDOM += `<p>
+                        <span>Common Name</span>
+                        <br>${arr[i][i].spc_common_name}</p>
+
+                        <p>
+                        <br><span>Scientific Name</span>
+                        <br>${arr[i][i].spc_latin}</p>
+
+                        <p>
+                        <br><span>Percentage</span>
+                        <br>${arr[i][i].spc_latin}</p>
+
+                        <p>
+                        <br><span>Total Number of Trees</span>
+                        <br>${arr[i][i].length}</p>`
+
+
+
+            treesDOM += `</div>` // info container end
+            treesDOM += `</div>` // info flex end
+            //INFO END
+
             treesDOM += `<div class="tree-container">`;
 
             for (let j=0; j < Math.floor(arr[i].length/100); j++) {
