@@ -582,13 +582,12 @@ fetch(url)
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
 
-    function randomColor(arr){
-    return arr[Math.floor(Math.random()*arr.length)]
-    };
+function roundToTwo(num) {
+    return +(Math.round(num + "e+2")  + "e-2");
+}
 
     function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
-            // treesDOM += `<p class="body-text">${[i]}</p>`
             treesDOM += `<div class="viz-container">`;
             treesDOM += `<p class="body-text">${arr[i][i].spc_common_name}</p>`;
 
@@ -608,11 +607,11 @@ fetch(url)
 
                         <p>
                         <br><span>Percentage</span>
-                        <br>${arr[i][i].spc_latin}</p>
+                        <br> ${roundToTwo((arr[i].length/LIMIT)*100)}%</p>
 
                         <p>
                         <br><span>Total Number of Trees</span>
-                        <br>${arr[i][i].length}</p>`
+                        <br>${arr[i].length}</p>`
 
 
 
@@ -629,11 +628,12 @@ fetch(url)
             treesDOM += `</div>`
             treesDOM += `</div>`
         }
-    }; 
+    
 
     createTheDivs(allArray);
 
     mainContainer.innerHTML = treesDOM;
+
 
     percentageFilterBtn.addEventListener("click", function() {
 

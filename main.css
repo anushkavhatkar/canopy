@@ -368,12 +368,14 @@ border-bottom: .1em black solid;
     padding: .5em 0em;
     height: 18em;
     gap: .5em;
+    /* display: none; */
 }
 
 .info-img {
     background-color: grey;
     width: 30%;
     padding: .5em;
+    border-radius: .25em;
 }
 
 .info-container { 
