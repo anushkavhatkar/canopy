@@ -627,12 +627,61 @@ function roundToTwo(num) {
 
             treesDOM += `</div>`
             treesDOM += `</div>`
-        }
+
+            mainContainer.innerHTML = treesDOM;
+
+
+            
+            
+
+//           for (let i = 0; i < treeVisualisations.length; i++) {
+//              (function (index) {
+//                  treeVisualisations[i].addEventListener('click', function () {
+//                 let infoContainers = document.getElementsByClassName('info-flex');
+//                 console.log(infoContainers);
+
+//                 if (infoContainers[index].style.display !== 'none') {
+//                 infoContainers[index].style.display = 'none';
+//                 } else {
+//                 infoContainers[index].style.display = 'flex';
+//                 }
+//                  });
+//                 })(i);            
+  } // createTheDivs fn end
+
+
+  let treeVisualisations = document.getElementsByClassName('viz-container');
+
+for (let i = 0; i < treeVisualisations.length; i++) {
+
+    treeVisualisations[i].addEventListener("click", function () {
+      let infoContainers = document.getElementsByClassName('info-flex');
+      console.log(infoContainers);
+
+      if (infoContainers[i].style.display !== "none") {
+        infoContainers[i].style.display = "none";
+      } else {
+        infoContainers[i].style.display = "flex";
+      }
+    });
+  }
+}
+
+
+           
+
+            
+        
+
+
+
+
+        
     
 
-    createTheDivs(allArray);
+ createTheDivs(allArray);
 
-    mainContainer.innerHTML = treesDOM;
+    
 
 
     percentageFilterBtn.addEventListener("click", function() {
@@ -644,15 +693,7 @@ function roundToTwo(num) {
 
     });
 
-    // console.log(pinOakArray.length);
-    // console.log(pinOakArray);
-    // console.log(redMapleArray.length);
-    // console.log(redMapleArray);
 
-    // console.log(allArray.length);
-    // console.log(allArray);
-
-    // console.log(treesDOM);
 
 // #region --------------------- FILTERING THROUGH DATA INTERACTION + VISUALISATION ---------------------
 
@@ -766,7 +807,7 @@ function roundToTwo(num) {
 
 
 // THEN RESPONSE FIN
-  });
+  }); // 
 
 
 

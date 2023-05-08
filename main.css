@@ -363,12 +363,12 @@ border-bottom: .1em black solid;
 }
 
 .info-flex {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     padding: .5em 0em;
     height: 18em;
     gap: .5em;
-    /* display: none; */
+    display: none;
 }
 
 .info-img {
