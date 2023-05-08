@@ -74,6 +74,8 @@
     --japanese-tree-lilac: #D8FAA0;
     --chinese-tree-lilac: #CDFF7A; 
     --callery-pear: #14B87D; 
+    --norway-maple: #00C766; 
+    --sycamore-maple: #CFF16F;
     
 
 
@@ -322,6 +324,10 @@ font-size: var(--body-text-size);
     background-color: var(--red-maple);
 }
 
+.norway-maple {
+    background-color: var(--norway-maple);
+}
+
 .honeylocust {
     background-color: var(--honeylocust);
 }
@@ -524,6 +530,10 @@ font-size: var(--body-text-size);
 
 .tulip-poplar {
     background-color: var(--tulip-poplar);
+}
+
+.sycamore-maple {
+    background-color: var(--sycamore-maple);
 }
 
 /* #endregion */
