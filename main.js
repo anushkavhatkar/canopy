@@ -685,26 +685,26 @@ fetch(url)
 
 // #region --------------------- FILTER TAB HOVER AND CLICK PROPERTIES ---------------------
 
-    nativeFilterBtn.addEventListener("mouseover", function() {
-        nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
-    })
+    // nativeFilterBtn.addEventListener("mouseover", function() {
+    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    // })
     
-    nativeFilterBtn.addEventListener("click", function() {
-        nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
-    })
+    // nativeFilterBtn.addEventListener("click", function() {
+    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    // })
 
-    nativeFilterBtn.addEventListener("mouseleave", function() {
-        nativeFilterBtn.style.backgroundColor = "var(--light-white)";
-    })
+    // nativeFilterBtn.addEventListener("mouseleave", function() {
+    //     nativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    // })
 
-    nonNativeFilterBtn.addEventListener("click", function() {
-        nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
-    })
+    // nonNativeFilterBtn.addEventListener("click", function() {
+    //     nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
+    // })
     
     
-    nonNativeFilterBtn.addEventListener("mouseleave", function() {
-        nonNativeFilterBtn.style.backgroundColor = "var(--light-white)";
-    })
+    // nonNativeFilterBtn.addEventListener("mouseleave", function() {
+    //     nonNativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    // })
 
 
     // #endregion
