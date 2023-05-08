@@ -586,15 +586,42 @@ function roundToTwo(num) {
     return +(Math.round(num + "e+2")  + "e-2");
 }
 
+function revealInfoBlocks () {
+
+    let treeVisualisations = document.getElementsByClassName('viz-container');
+    
+    for (let i=0; i <treeVisualisations.length; i++) {
+        let infoContainers = document.getElementsByClassName('info-block');
+    
+        treeVisualisations[i].addEventListener("click", () => {
+    
+            treeVisualisations[i].classList.toggle('info-block-active');
+    
+            if (treeVisualisations[i].classList.contains('info-block-active')) {
+                infoContainers[i].style.height = infoContainers[i].scrollHeight + "px"; 
+            } else {
+                infoContainers[i].style.height = 0;
+            }
+    
+    
+    
+        })
+    }
+    };
+
+function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
             treesDOM += `<div class="viz-container">`;
             treesDOM += `<p class="body-text">${arr[i][i].spc_common_name}</p>`;
 
             // INFO 
+            treesDOM += `<div class="info-block">`
             treesDOM += `<div class="info-flex">`;
             treesDOM += `<div class="info-img"></div>`;
             treesDOM += `<div class="info-img"></div>`;
 
+            treesDOM += `<div class="info-container body-text" data-height="auto">`
+            treesDOM += `<p id="content">
                         <span>Common Name</span>
                         <br>${arr[i][i].spc_common_name}</p>
 
@@ -614,6 +641,7 @@ function roundToTwo(num) {
 
             treesDOM += `</div>` // info container end
             treesDOM += `</div>` // info flex end
+            treesDOM += `</div>` // info block end
             //INFO END
 
             treesDOM += `<div class="tree-container">`;
@@ -627,6 +655,12 @@ function roundToTwo(num) {
 
             mainContainer.innerHTML = treesDOM;
 
+                    
+} // forloop end
+
+
+ 
+revealInfoBlocks();
 
 
 
@@ -634,10 +668,11 @@ function roundToTwo(num) {
 
 
 
+} // createTheDivs end
 
+// ******* 
 
-
-
+createTheDivs(allArray);
 
     
 
@@ -646,8 +681,11 @@ function roundToTwo(num) {
 
         treesDOM = "";
         createTheDivs(allArray);
+        revealInfoBlocks();
 
         mainContainer.innerHTML = treesDOM;
+
+        
 
     });
 
