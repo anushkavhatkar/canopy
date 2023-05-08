@@ -586,7 +586,6 @@ function roundToTwo(num) {
     return +(Math.round(num + "e+2")  + "e-2");
 }
 
-    function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
             treesDOM += `<div class="viz-container">`;
             treesDOM += `<p class="body-text">${arr[i][i].spc_common_name}</p>`;
@@ -596,8 +595,6 @@ function roundToTwo(num) {
             treesDOM += `<div class="info-img"></div>`;
             treesDOM += `<div class="info-img"></div>`;
 
-            treesDOM += `<div class="info-container body-text">`
-            treesDOM += `<p>
                         <span>Common Name</span>
                         <br>${arr[i][i].spc_common_name}</p>
 
@@ -631,55 +628,16 @@ function roundToTwo(num) {
             mainContainer.innerHTML = treesDOM;
 
 
-            
-            
-
-//           for (let i = 0; i < treeVisualisations.length; i++) {
-//              (function (index) {
-//                  treeVisualisations[i].addEventListener('click', function () {
-//                 let infoContainers = document.getElementsByClassName('info-flex');
-//                 console.log(infoContainers);
-
-//                 if (infoContainers[index].style.display !== 'none') {
-//                 infoContainers[index].style.display = 'none';
-//                 } else {
-//                 infoContainers[index].style.display = 'flex';
-//                 }
-//                  });
-//                 })(i);            
-  } // createTheDivs fn end
-
-
-  let treeVisualisations = document.getElementsByClassName('viz-container');
-
-for (let i = 0; i < treeVisualisations.length; i++) {
-
-    treeVisualisations[i].addEventListener("click", function () {
-      let infoContainers = document.getElementsByClassName('info-flex');
-      console.log(infoContainers);
-
-      if (infoContainers[i].style.display !== "none") {
-        infoContainers[i].style.display = "none";
-      } else {
-        infoContainers[i].style.display = "flex";
-      }
-    });
-  }
-}
-
-
-           
-
-            
-        
 
 
 
 
-        
-    
 
- createTheDivs(allArray);
+
+
+
+
+
 
     
 
@@ -721,7 +679,6 @@ for (let i = 0; i < treeVisualisations.length; i++) {
     
         createNativeDivs(allNativeArray);
     
-        mainContainer.innerHTML = nativeTreesDOM;
     
     });
 
@@ -748,7 +705,6 @@ for (let i = 0; i < treeVisualisations.length; i++) {
     
         createNonNativeDivs(allNonNativeArray);
     
-        mainContainer.innerHTML = nonNativeTreesDOM;
     
     });
 // #endregion 
