@@ -49,8 +49,8 @@ function size(){
     
     // let hoverText = document.querySelector('#hover-native');
     let squareDivs = document.querySelectorAll('.box');
-  console.log(typeof(squareDivs));
-  console.log(squareDivs);
+  // console.log(typeof(squareDivs));
+  // console.log(squareDivs);
 
   hoverText.innerHTML = "Native";
     
