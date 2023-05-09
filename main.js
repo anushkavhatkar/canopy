@@ -56,13 +56,13 @@ let honeylocustArray = [];
 let americanLindenArray = [];
 let londonPlanetreeArray = [];
 let ginkgoArray = [];
-let americanElmArray = [];
+
 let sophoraArray = [];
 let calleryPearArray = [];
 let littleleafLindenArray = [];
 let fastigiataOakArray = []; 
 let sweetgumArray = [];
-let dawnRedwoodArray = [];
+
 let baldcypressArray = [];
 let coffeetreesArray = [];
 let northernRedOakArray = [];
@@ -73,7 +73,7 @@ let crimeanLindenArray = [];
 let silverLindenArray = [];
 let riverBirchArray = [];
 let hackberryArray = [];
-let katsuraTreeArray = [];
+
 let turkishHazelnutArray = [];
 let hardyRubberTreeArray = [];
 let europeanBeechArray = [];
@@ -89,7 +89,7 @@ let redOakArray = [];
 let schumardOakArray = [];
 let blackOakArray = [];
 let baldCypressArray = [];
-let chineseElmArray = [];
+
 let japaneseZelkovaArray =[];
 let redHorsechestnutArray = [];
 let europeanHornbeamArray = [];
@@ -116,6 +116,49 @@ let japaneseTreeLilacArray = [];
 let chineseTreeLilacArray = [];
 let oklahomaRedbudArray = [];
 let sycamoreMapleArray = [];
+
+//
+let europeanAlderArray = [];
+let ashArray = [];
+let greenAshArray = [];
+let whiteAshArray = [];
+let blackLocustArray = [];
+let catalpaArray = [];
+let atlanticWhiteCedar = [];
+let atlasCedarArray = [];
+let himalayanCedarArray = [];
+let chokecherryArray = [];
+let corktreeArray = [];
+let easternCottonwood = [];
+let dawnRedwoodArray = [];
+let douglasFirArray = [];
+let easternRedcedarArray = [];
+let siberianElmArray = [];
+let chineseElmArray = [];
+let americanElmArray = [];
+let empressTreeArray = [];
+let easternHemlockArray = [];
+let hickoryArray = [];
+let hollyArray = [];
+let japaneseSnowbellArray = [];
+let katsuraTreeArray = [];
+let americanLarchArray = [];
+let magnoliaArray = [];
+let southernMagnoliaArray = [];
+let cucumberMagnoliaArray = [];
+let mulberryArray = [];
+let osageOrangeArray = [];
+let pagodaDogwoodArray = [];
+let whitePineArray = [];
+let redPineArray = [];
+let scotsPineArray = [];
+let blackPineArray = [];
+let silverbellArray = [];
+let spruceArray = [];
+let norwaySpruceArray = [];
+let blueSpruceArray = [];
+let heavenArray = [];
+let blackWalnutArray = [];
 
 // #endregion
 
