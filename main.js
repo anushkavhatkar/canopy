@@ -30,6 +30,8 @@ let keyText = document.querySelector('#key-text');
 
 let keyFlex = document.querySelector("#key-flex");
 
+let internalImagePath = "../canopy/assets/";
+
 
 
 // #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
@@ -194,46 +196,64 @@ fetch(url)
         if (tree.spc_common == "pin oak") {
             tree.spc_common = "pin-oak";
             tree.spc_common_name = "Pin Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            
+            
             pinOakArray.push(tree);
         }
 
         if (tree.spc_common == "Callery pear") {
             tree.spc_common = "callery-pear";
             tree.spc_common_name = "Callery Pear";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             calleryPearArray.push(tree);
         }
 
         if (tree.spc_common == "red maple") {
             tree.spc_common = "red-maple";
             tree.spc_common_name = "Red Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             redMapleArray.push(tree);
         }
 
         if (tree.spc_common == "Norway maple") {
             tree.spc_common = "norway-maple";
             tree.spc_common_name = "Norway Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             norwayMapleArray.push(tree);
         }
 
         if (tree.spc_common == "honeylocust") {
             tree.spc_common_name = "Honeylocust";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             honeylocustArray.push(tree);
         }
 
         if (tree.spc_common == "American linden") {
             tree.spc_common = "american-linden";
             tree.spc_common_name = "American Linden";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             americanLindenArray.push(tree);
         }
 
         if (tree.spc_common == "London planetree") {
             tree.spc_common = "london-planetree";
             tree.spc_common_name = "London Planetree";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             londonPlanetreeArray.push(tree);
         }
 
         if (tree.spc_common == "ginkgo") {
             tree.spc_common_name = "Ginkgo";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             ginkgoArray.push(tree);
         }
 
@@ -244,138 +264,186 @@ fetch(url)
         if (tree.spc_common == "river birch") {
             tree.spc_common = "river-birch";
             tree.spc_common_name = "River Birch";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             riverBirchArray.push(tree);
         }
         
         if (tree.spc_common == "Turkish hazelnut") {
             tree.spc_common = "turkish-hazelnut";
             tree.spc_common_name = "Turkish Hazelnut";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             turkishHazelnutArray.push(tree);
         }
 
         if (tree.spc_common == "hardy rubber tree") {
             tree.spc_common = "hardy-rubber-tree";
             tree.spc_common_name = "Hardy Rubber Tree";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             hardyRubberTreeArray.push(tree);
         }
 
         if (tree.spc_common == "European beech") {
             tree.spc_common = "european-beech";
             tree.spc_common_name = "European Beech";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             europeanBeechArray.push(tree);
         }
 
         if (tree.spc_common == "Kentucky coffeetree") {
             tree.spc_common = "kentucky-coffeetree";
             tree.spc_common_name = "Kentucky Coffeetree";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             kentuckyCoffeetreeArray.push(tree);
         }
 
         if (tree.spc_common == "sweetgum") {
             tree.spc_common_name = "Sweetgum";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             sweetgumArray.push(tree);
         }
 
         if (tree.spc_common == "tulip-poplar") {
             tree.spc_common_name = "Tulip Poplar";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             tulipTreeArray.push(tree);
         }
 
         if (tree.spc_common == "blackgum") {
             tree.spc_common_name = "Blackgum";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             blackgumArray.push(tree);
         }
 
         if (tree.spc_common == "sawtooth oak") {
             tree.spc_common = "sawtooth-oak";
             tree.spc_common_name = "Sawtooth Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             sawtoothOakArray.push(tree);
         }
 
         if (tree.spc_common == "swamp white oak") {
             tree.spc_common = "swamp-white-oak";
             tree.spc_common_name = "Swamp White Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             swampWhiteOakArray.push(tree);
         }
         
         if (tree.spc_common == "scarlet") {
             tree.spc_common_name = "Scarlet Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             scarletOakArray.push(tree);
         }
 
         if (tree.spc_common == "shingle oak") {
             tree.spc_common = "shingle-oak";
             tree.spc_common_name = "Shingle Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             shingleOakArray.push(tree);
         }
 
         if (tree.spc_common == "bur oak") {
             tree.spc_common = "bur-oak";
             tree.spc_common_name = "Bur Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             burOakArray.push(tree);
         }
 
         if (tree.spc_common == "willow oak") {
             tree.spc_common = "willow-oak";
             tree.spc_common_name = "Willow Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             willowOakArray.push(tree);
         }
 
         if (tree.spc_common == "schumard's oak") {
             tree.spc_common = "schumard-oak";
             tree.spc_common_name = "Schumard's Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             schumardOakArray.push(tree);
         }
 
         if (tree.spc_common == "black oak") {
             tree.spc_common = "black-oak";
             tree.spc_common_name = "Black Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             blackOakArray.push(tree);
         }
         
         if (tree.spc_common == "sophora") {
             tree.spc_common_name = "Sophora Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             sophoraArray.push(tree);
         }
         
         if (tree.spc_common == "bald cypress") {
             tree.spc_common = "bald-cypress";
             tree.spc_common_name = "Bald Cypress";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             baldCypressArray.push(tree);
         }
 
         if (tree.spc_common == "littleleaf linden") {
             tree.spc_common = "littleleaf-linden";
             tree.spc_common_name = "Littleleaf Linden";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             littleleafLindenArray.push(tree);
         }
 
         if (tree.spc_common == "silver linden") {
             tree.spc_common = "silver-linden";
             tree.spc_common_name = "Silver Oak";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             silverLindenArray.push(tree);
         }
 
         if (tree.spc_common == "american elm") {
             tree.spc_common = "American Elm";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             americanElmArray.push(tree);
         }
 
         if (tree.spc_common == "chinese elm") {
             tree.spc_common = "chinese-elm";
             tree.spc_common_name = "Chinese Elm";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             chineseElmArray.push(tree);
         }
 
         if (tree.spc_common == "Japanese zelkova") {
             tree.spc_common = "japanese-zelkova";
             tree.spc_common_name = "Japanese Zelkova";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             japaneseZelkovaArray.push(tree);
         }
 
         if (tree.spc_common == "red horse chestnut") {
             tree.spc_common = "red-horse-chestnut";
             tree.spc_common_name = "Red Horse Chestnut";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             redHorsechestnutArray.push(tree);
 
         }
@@ -383,112 +451,151 @@ fetch(url)
         if (tree.spc_common == "european hornbeam") {
             tree.spc_common = "european-hornbeam";
             tree.spc_common_name = "European Hornbeam";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            europeanHornbeamArray.push(tree);
         }
 
         if (tree.spc_common == "american hornbeam") {
             tree.spc_common = "american-hornbeam";
             tree.spc_common_name = "American Hornbeam";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             americanElmArray.push(tree);
         }
 
         if (tree.spc_common == "japanese hornbeam") {
             tree.spc_common = "japanese-hornbeam";
             tree.spc_common_name = "Japanese Hornbeam";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             japaneseHornbeamArray.push(tree);
         }
 
         if (tree.spc_common == "Kentucky yellowwood") {
             tree.spc_common = "kentucky-yellowwood";
             tree.spc_common_name = "Kentucky Yellowwood";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             kentuckyCoffeetreeArray.push(tree);
         }
 
         if (tree.spc_common == "golden raintree") {
             tree.spc_common = "golden-raintree";
             tree.spc_common_name = "Golden Raintree";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             goldenRaintreeArray.push(tree);
         }
 
         if (tree.spc_common == "Amur maackia") {
             tree.spc_common = "amur-maackia";
             tree.spc_common_name = "Amur Maackia";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             amurMaackiaArray.push(tree);
         }
         
         if (tree.spc_common == "Persian ironwood") {
             tree.spc_common = "persian-ironwood";
             tree.spc_common_name = "Persian Ironwood";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             persianIronwoodArray.push(tree);
         }
 
         if (tree.spc_common == "hedge maple") {
             tree.spc_common = "hedge-maple";
             tree.spc_common_name = "Hedge Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             hedgeMapleArray.push(tree);
         }
 
         if (tree.spc_common == "amur maple") {
             tree.spc_common = "amur-maple";
             tree.spc_common_name = "Amur Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             amurMapleArray.push(tree);
         }
 
         if (tree.spc_common == "paperbark maple") {
             tree.spc_common = "paperbark-maple";
             tree.spc_common_name = "Paperbark Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             paperbarkMapleArray.push(tree);
         }
 
         if (tree.spc_common == "tartar maple") {
             tree.spc_common = "tartar-maple";
             tree.spc_common_name = "Tartar Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             tartarMapleArray.push(tree);
         }
 
         if (tree.spc_common == "shantung maple") {
             tree.spc_common = "shantung-maple";
             tree.spc_common_name = "Shantung Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             shantungMapleArray.push(tree);
         }
 
         if (tree.spc_common == "serviceberry") {
             tree.spc_common_name = "Serviceberry";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             serviceberryArray.push(tree);
         }
 
         if (tree.spc_common == "Oklahoma redbud") {
             tree.spc_common = "oklahoma-redbud";
             tree.spc_common_name = "Oklahoma Redbud";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             redbudArray.push(tree);
         }
 
         if (tree.spc_common == "Chinese fringetree") {
             tree.spc_common = "chinese-fringetree";
             tree.spc_common_name = "Chinese Fringetree";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             chineseFringetreeArray.push(tree);
         }
 
         if (tree.spc_common == "kousa dogwood") {
             tree.spc_common = "kousa-dogwood";
             tree.spc_common_name = "Kousa Dogwood";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             kousaDogwoodArray.push(tree);
         }
 
         if (tree.spc_common == "cornelian cherry") {
             tree.spc_common = "cornelian-cherry";
             tree.spc_common_name = "Cornelian Cherry";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             cornelianCherryArray.push(tree);
         }
 
         if (tree.spc_common == "cockspur hawthorn") {
             tree.spc_common = "cockspur-hawthorn";
             tree.spc_common_name = "Cockspur Hawthorn";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             cockspurHawthornArray.push(tree);
         }
 
         if (tree.spc_common == "crab apple") {
             tree.spc_common = "crab-apple";
             tree.spc_common_name = "Crab Apple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             crabappleArray.push(tree);
         }
 
@@ -496,24 +603,32 @@ fetch(url)
         if (tree.spc_common == "purple-leaf plum") {
             tree.spc_common = "purple-leaf-plum";
             tree.spc_common_name = "Purple Leaf Plum";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             purpleLeafPlumArray.push(tree);
         }
 
         if (tree.spc_common == "Japanese tree lilac") {
             tree.spc_common = "japanese-tree-lilac";
             tree.spc_common_name = "Japanese Tree Lilac";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             japaneseTreeLilacArray.push(tree);
         }
 
         if (tree.spc_common == "Chinese tree lilac") {
             tree.spc_common = "chinese-tree-lilac";
             tree.spc_common_name = "Chinese Tree Lilac";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             chineseTreeLilacArray.push(tree);
         }
 
         if (tree.spc_common == "Oklahoma redbud") {
             tree.spc_common = "oklahoma-redbud";
             tree.spc_common_name = "Oklahoma Redbud";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             chineseTreeLilacArray.push(tree);
         }
 
@@ -521,6 +636,8 @@ fetch(url)
         if (tree.spc_common == "sycamore maple") {
             tree.spc_common = "sycamore-maple";
             tree.spc_common_name = "Sycamore Maple";
+            tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
+            tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             sycamoreMapleArray.push(tree);
         }
 
@@ -635,8 +752,9 @@ function createTheDivs(arr) {
             // INFO 
             treesDOM += `<div class="info-block">`
             treesDOM += `<div class="info-flex">`;
-            treesDOM += `<div class="info-img"></div>`;
-            treesDOM += `<div class="info-img"></div>`;
+            treesDOM += `<div class="info-img" style="background-image: url('${arr[i][i].imageOne}'); background-size: cover;"></div>`;
+            treesDOM += `<div class="info-img" style="background-image: url('${arr[i][i].imageTwo}'); background-size: cover;"></div>`;
+
 
             treesDOM += `<div class="info-container body-text" data-height="auto">`
             treesDOM += `<p id="content">
