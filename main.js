@@ -782,6 +782,8 @@ function createTheDivs(arr) {
 
             treesDOM += `<div class="tree-container">`;
 
+            // LOOP THAT CREATES SMALL DIVS
+
             for (let j=0; j < Math.floor(arr[i].length/100); j++) {
                 treesDOM += `<div class="tiny-box ${arr[i][i].spc_common}"></div>`
             };
