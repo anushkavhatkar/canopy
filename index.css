@@ -144,6 +144,7 @@ html,body{
 }
 a {
   display: block;
+  cursor: crosshair;
 }
 
 #container{
