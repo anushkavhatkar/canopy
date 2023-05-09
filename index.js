@@ -65,18 +65,27 @@ function size(){
         }
     });
     
-    document.addEventListener("mousemove", function(e){
-      let mouseX = e.clientX;
-      let mouseY = e.clientY;
+    // document.addEventListener("mousemove", function(e){
+    //   let mouseX = e.clientX;
+    //   let mouseY = e.clientY;
     
-      hoverText.style.top = e.clientX + "px";
-      hoverText.style.left = e.clientY + "px";
+    //   hoverText.style.top = e.clientX + "px";
+    //   hoverText.style.left = e.clientY + "px";
       
-    });
+    // });
     
     
   }
 };
+
+document.addEventListener("mousemove", function(e){
+  let mouseX = e.clientX;
+  let mouseY = e.clientY;
+
+  hoverText.style.top = e.clientX + "px";
+  hoverText.style.left = e.clientY + "px";
+  
+});
 
 window.addEventListener('resize',function(){
 	size();
