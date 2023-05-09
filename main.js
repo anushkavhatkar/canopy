@@ -16,13 +16,19 @@ let nativeTreesDOM = " ";
 
 let nonNativeTreesDOM = " ";
 
+let forestDOM = "";
+
 let nativeFilterBtn = document.querySelector('#native-filter');
 
 let nonNativeFilterBtn = document.querySelector('#non-native-filter');
 
 let percentageFilterBtn = document.querySelector('#percentage-filter');
 
+let forestBtn = document.querySelector("#forest_btn");
+
 let keyText = document.querySelector('#key-text');
+
+let keyFlex = document.querySelector("#key-flex");
 
 
 
@@ -643,7 +649,7 @@ function createTheDivs(arr) {
 
                         <p>
                         <br><span>Percentage</span>
-                        <br> ${roundToTwo((arr[i].length/LIMIT)*100)}%</p>
+                        <br> ${roundToTwo((arr[i].length/allTreesTotalNumber)*100)}%</p>
 
                         <p>
                         <br><span>Total Number of Trees</span>
@@ -691,26 +697,32 @@ createTheDivs(allArray);
     
 
 
-    percentageFilterBtn.addEventListener("click", function() {
-
-        treesDOM = "";
-        keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
-
-        createTheDivs(allArray);
-        
-
-        mainContainer.innerHTML = treesDOM;
-
-        revealInfoBlocks();
-        
-
-    });
+    
 
 
 
-// #region --------------------- FILTERING THROUGH DATA INTERACTION + VISUALISATION ---------------------
+// #region ------------------------------------------ SUB FILTERS  ------------------------------------------
 
-// ------------------------------------------ NATIVE DOM ------------------------------------------
+//#region ----------------------- VIEW ALL DOM -----------------------
+
+percentageFilterBtn.addEventListener("click", function() {
+
+    treesDOM = "";
+    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+
+    createTheDivs(allArray);
+    
+
+    mainContainer.innerHTML = treesDOM;
+
+    revealInfoBlocks();
+    
+
+});
+//#endregion
+
+    //#region ----------------------- NATIVE DOM -----------------------
+
     nativeFilterBtn.addEventListener("click", function() {
         nativeTreesDOM = "";
         keyText.innerHTML = `Visualizing ${nativeTreesTotalNumber} New York City trees by`;
@@ -739,7 +751,7 @@ createTheDivs(allArray);
 
                         <p>
                         <br><span>Percentage</span>
-                        <br> ${roundToTwo((arr[k].length/LIMIT)*100)}%</p>
+                        <br> ${roundToTwo((arr[k].length/allTreesTotalNumber)*100)}%</p>
 
                         <p>
                         <br><span>Total Number of Trees</span>
@@ -778,10 +790,11 @@ createTheDivs(allArray);
         revealInfoBlocks();
     
     });
+    //#endregion
 
 
+    // #region ----------------------- NON NATIVE DOM -----------------------
 
-// ------------------------------------------ NON NATIVE DOM ------------------------------------------
     nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeTreesDOM = "";
         keyText.innerHTML = `Visualizing ${nonNativeTreesTotalNumber} New York City trees by`;
@@ -810,7 +823,7 @@ createTheDivs(allArray);
 
                         <p>
                         <br><span>Percentage</span>
-                        <br> ${roundToTwo((arr[k].length/LIMIT)*100)}%</p>
+                        <br> ${roundToTwo((arr[k].length/allTreesTotalNumber)*100)}%</p>
 
                         <p>
                         <br><span>Total Number of Trees</span>
@@ -851,65 +864,71 @@ createTheDivs(allArray);
         
     
     });
-// #endregion 
-
-// #region --------------------- FILTER TAB HOVER AND CLICK PROPERTIES ---------------------
-
-    // nativeFilterBtn.addEventListener("mouseover", function() {
-    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
-    // })
-    
-    // nativeFilterBtn.addEventListener("click", function() {
-    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
-    // })
-
-    // nativeFilterBtn.addEventListener("mouseleave", function() {
-    //     nativeFilterBtn.style.backgroundColor = "var(--light-white)";
-    // })
-
-    // nonNativeFilterBtn.addEventListener("click", function() {
-    //     nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
-    // })
-    
-    
-    // nonNativeFilterBtn.addEventListener("mouseleave", function() {
-    //     nonNativeFilterBtn.style.backgroundColor = "var(--light-white)";
-    // })
-
-
     // #endregion
 
+
+// #endregion 
+
+
+
+
+
+// #region --------------------- MAIN FILTERS  ---------------------
+
+forestBtn.addEventListener("click", function () {
+    forestDOM = "";
+
+    keyFlex.innerHTML = 
+    `<div>
+            Visualizing all ${allTreesTotalNumber} New York City trees
+    </div>
+
+    <div>
+        1 square = 100 trees
+    </div>`;
+
+
+    mainContainer.innerHTML = forestDOM;
+
+
+
+});
+
+
+
+
+
+
+// #endregion
+
  
-// #region SMOOTH SCROLL FUNCTION
-
-// function reveal() {
-//     var reveals = document.querySelectorAll(".reveal");
-//     for (var i = 0; i < reveals.length; i++) {
-//       var windowHeight = window.innerHeight;
-//       var elementTop = reveals[i].getBoundingClientRect().top;
-//       var elementVisible = 150;
-//       if (elementTop < windowHeight - elementVisible) {
-//         reveals[i].classList.add("active");
-//       } else {
-//         reveals[i].classList.remove("active");
-//       }
-//     }
-//   }
 
 
-// window.addEventListener("scroll", reveal);
 
-// // To check the scroll position on page load
-// reveal();
-
+// ****** THEN RESPONSE FIN *******
+  }); 
 // #endregion
 
 
 
-// THEN RESPONSE FIN
-  }); // 
-// #endregion
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#region TRIALS
 
 
 //#region choppy but working accordion
@@ -964,3 +983,50 @@ createTheDivs(allArray);
     // treesDOM += `</div>`
 
     // #endregion
+
+    // #region SMOOTH SCROLL FUNCTION
+
+// function reveal() {
+//     var reveals = document.querySelectorAll(".reveal");
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 150;
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("active");
+//       } else {
+//         reveals[i].classList.remove("active");
+//       }
+//     }
+//   }
+
+
+// window.addEventListener("scroll", reveal);
+
+// // To check the scroll position on page load
+// reveal();
+
+// #endregion
+
+    // nativeFilterBtn.addEventListener("mouseover", function() {
+    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    // })
+    
+    // nativeFilterBtn.addEventListener("click", function() {
+    //     nativeFilterBtn.style.backgroundColor = randomColor(nativeColorsArray);
+    // })
+
+    // nativeFilterBtn.addEventListener("mouseleave", function() {
+    //     nativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    // })
+
+    // nonNativeFilterBtn.addEventListener("click", function() {
+    //     nonNativeFilterBtn.style.backgroundColor = randomColor(nonNativeColorsArray);
+    // })
+    
+    
+    // nonNativeFilterBtn.addEventListener("mouseleave", function() {
+    //     nonNativeFilterBtn.style.backgroundColor = "var(--light-white)";
+    // })
+
+    //#endregion
