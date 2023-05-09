@@ -700,7 +700,7 @@ fetch(url)
         if (tree.spc_common == "green ash") {
             tree.spc_common = "green-ash";
             tree.spc_common_name = "Green Ash";
-            spc_common + "-1" + ".jpeg";
+
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
             greenAshArray.push(tree);
@@ -858,7 +858,7 @@ fetch(url)
             hollyArray.push(tree);
         }
 
-        if (tree.spc_common = "Japanese snowbell") {
+        if (tree.spc_common == "Japanese snowbell") {
             tree.spc_common = "japanese-snowbell";
             tree.spc_common_name = "Japanese Snowbell";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
