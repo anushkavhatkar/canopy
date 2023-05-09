@@ -124,12 +124,12 @@ let greenAshArray = [];
 let whiteAshArray = [];
 let blackLocustArray = [];
 let catalpaArray = [];
-let atlanticWhiteCedar = [];
+let atlanticWhiteCedarArray = [];
 let atlasCedarArray = [];
 let himalayanCedarArray = [];
 let chokecherryArray = [];
 let corktreeArray = [];
-let easternCottonwood = [];
+let easternCottonwoodArray = [];
 let dawnRedwoodArray = [];
 let douglasFirArray = [];
 let easternRedcedarArray = [];
@@ -734,7 +734,7 @@ fetch(url)
             tree.spc_common_name = "Atlantic White Cedar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
-            atlanticWhiteCedar.push(tree);
+            atlanticWhiteCedarArray.push(tree);
         }
 
         if (tree.spc_common == "Atlas cedar") {
@@ -774,7 +774,7 @@ fetch(url)
             tree.spc_common_name = "Eastern Cottonwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
-            easternCottonwood.push(tree);
+            easternCottonwoodArray.push(tree);
         }
 
         if (tree.spc_common == "dawn redwood") { 
@@ -1008,7 +1008,7 @@ fetch(url)
             blackWalnutArray.push(tree);
         }
 
-        
+
 
 
     });
@@ -1019,7 +1019,7 @@ fetch(url)
     // #region --------------------- ARRAY CONSTRUCTION - ALL, NATIVE, NON NATIVE --------------------- 
    
 
-    allArray.push(pinOakArray, redMapleArray, honeylocustArray, americanLindenArray, londonPlanetreeArray, ginkgoArray, americanElmArray, sophoraArray, calleryPearArray, littleleafLindenArray, fastigiataOakArray, sweetgumArray, dawnRedwoodArray, baldcypressArray, coffeetreesArray, northernRedOakArray, swampWhiteOakArray, shingleOakArray, willowOakArray, crimeanLindenArray, silverLindenArray, riverBirchArray, hackberryArray, katsuraTreeArray, turkishHazelnutArray, hardyRubberTreeArray, europeanBeechArray, kentuckyCoffeetreeArray, tulipTreeArray, blackgumArray, sawtoothOakArray, whiteOakArray, scarletOakArray, burOakArray, englishOakArray, redOakArray, schumardOakArray, blackOakArray, baldCypressArray, chineseElmArray, japaneseZelkovaArray, redHorsechestnutArray, europeanHornbeamArray, americanHornbeamArray, japaneseHornbeamArray, kentuckyYellowwoodArray, goldenRaintreeArray, amurMaackiaArray, persianIronwoodArray, hedgeMapleArray,amurMapleArray, paperbarkMapleArray, tartarMapleArray, shantungMapleArray, serviceberryArray, redbudArray, chineseFringetreeArray, kousaDogwoodArray, cornelianCherryArray, cockspurHawthornArray, crabappleArray, purpleLeafPlumArray, japaneseTreeLilacArray, chineseTreeLilacArray, norwayMapleArray, sycamoreMapleArray);
+    allArray.push(pinOakArray, redMapleArray, honeylocustArray, americanLindenArray, londonPlanetreeArray, ginkgoArray, americanElmArray, sophoraArray, calleryPearArray, littleleafLindenArray, fastigiataOakArray, sweetgumArray, dawnRedwoodArray, baldcypressArray, coffeetreesArray, northernRedOakArray, swampWhiteOakArray, shingleOakArray, willowOakArray, crimeanLindenArray, silverLindenArray, riverBirchArray, hackberryArray, katsuraTreeArray, turkishHazelnutArray, hardyRubberTreeArray, europeanBeechArray, kentuckyCoffeetreeArray, tulipTreeArray, blackgumArray, sawtoothOakArray, whiteOakArray, scarletOakArray, burOakArray, englishOakArray, redOakArray, schumardOakArray, blackOakArray, baldCypressArray, chineseElmArray, japaneseZelkovaArray, redHorsechestnutArray, europeanHornbeamArray, americanHornbeamArray, japaneseHornbeamArray, kentuckyYellowwoodArray, goldenRaintreeArray, amurMaackiaArray, persianIronwoodArray, hedgeMapleArray,amurMapleArray, paperbarkMapleArray, tartarMapleArray, shantungMapleArray, serviceberryArray, redbudArray, chineseFringetreeArray, kousaDogwoodArray, cornelianCherryArray, cockspurHawthornArray, crabappleArray, purpleLeafPlumArray, japaneseTreeLilacArray, chineseTreeLilacArray, norwayMapleArray, sycamoreMapleArray, europeanAlderArray, ashArray, greenAshArray, whiteAshArray, blackLocustArray, catalpaArray, atlanticWhiteCedarArray, atlasCedarArray, himalayanCedarArray, chokecherryArray, corktreeArray, easternCottonwoodArray, dawnRedwoodArray, douglasFirArray, easternRedcedarArray, siberianElmArray, chineseElmArray, americanElmArray, empressTreeArray, easternHemlockArray, hickoryArray, hollyArray, japaneseSnowbellArray, katsuraTreeArray, americanLarchArray, magnoliaArray, southernMagnoliaArray, cucumberMagnoliaArray, mulberryArray, osageOrangeArray, pagodaDogwoodArray, whitePineArray, redPineArray, scotsPineArray, blackPineArray, silverbellArray, spruceArray, norwaySpruceArray, blueSpruceArray, heavenArray, blackWalnutArray);
 
     allNativeArray.push(redMapleArray, riverBirchArray, honeylocustArray, kentuckyCoffeetreeArray, sweetgumArray, tulipTreeArray, blackgumArray, sawtoothOakArray, swampWhiteOakArray, scarletOakArray, shingleOakArray, burOakArray, willowOakArray, americanElmArray, littleleafLindenArray, silverLindenArray, americanElmArray, americanHornbeamArray, blackOakArray, schumardOakArray, baldCypressArray);
 
