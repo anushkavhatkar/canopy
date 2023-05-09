@@ -1,4 +1,4 @@
-// #region -------------------------------- ROOT VARIABLES --------------------------------
+// -------------------------------- ROOT VARIABLES --------------------------------
 
 
 
@@ -22,7 +22,9 @@ let nonNativeFilterBtn = document.querySelector('#non-native-filter');
 
 let percentageFilterBtn = document.querySelector('#percentage-filter');
 
-// #endregion
+let keyText = document.querySelector('#key-text');
+
+
 
 // #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
 
@@ -124,6 +126,7 @@ const url = `https://data.cityofnewyork.us/resource/${DATASET_IDENTIFIER}.json?$
 
 console.log(`Fetching url - ${url}`);
 // #endregion
+keyText.innerHTML = `Visualizing . . .  New York City trees by`;
 
 // #region COLLAPSE ALL
 
@@ -553,40 +556,33 @@ fetch(url)
     console.log(allArray); 
     console.log(allNativeArray);
 
+//#region ---------------------CALCULATING INTERNAL ARRAY LENGTHS (TOTAL NO. OF TREES) ---------------------
 
-    // #region --------------------- VISUALIZATION CREATION TRIALS ---------------------
-    
+let allNativeTreesNumber = 0;
+let allNonNativeTreesNumber = 0;
 
-    // allArray.forEach(function createDivs() {
-    //     treesDOM += `<div class="tree-container">`;
+function calcTotalNumbers(arr) {
+    let totalLength = 0;
 
-    //     for (i=0; i<Math.floor(allArray[i].length/100); i++) { 
-    //         treesDOM += `<div class="tree-${[i]}"></div>`
-    //     };
+    for (let i = 0; i < arr.length; i++) {
+        totalLength += arr[i].length;
+      }
 
-    //     treesDOM += `</div>`
+    return totalLength;
 
-    // })
+}
 
-    // function createDivs (arr) {
-    //     treesDOM += `<div class="tree-container">`;
-    //     for (i=0; i< Math.floor(arr[i].length/100); i++) {
-    //         treesDOM += `<div class="tree-${[i]}"></div>`
-    //     };
-    //     treesDOM += `</div>`
-    // }
-    
-    // treesDOM += `<div class="tree-container">`;
-    // for (i = 0; i < Math.floor(pinOakArray.length/100); i++) {
-    // treesDOM += `<div class="box"></div>`
-    // };
+const nativeTreesTotalNumber = calcTotalNumbers(allNativeArray);
+console.log(nativeTreesTotalNumber);
 
-    // createDivs(allArray);
+const nonNativeTreesTotalNumber = calcTotalNumbers(allNonNativeArray);
+console.log(nonNativeTreesTotalNumber);
+
+const allTreesTotalNumber = calcTotalNumbers(allArray);
+console.log(allTreesTotalNumber);
 
 
-    // treesDOM += `</div>`
-
-    // #endregion
+//#endregion
 
 /* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
 
@@ -617,8 +613,11 @@ function revealInfoBlocks () {
     
     
         })
+        
     }
     };
+
+    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
 
 
 
@@ -688,12 +687,15 @@ revealInfoBlocks();
 
 createTheDivs(allArray);
 
+
     
 
 
     percentageFilterBtn.addEventListener("click", function() {
 
         treesDOM = "";
+        keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+
         createTheDivs(allArray);
         
 
@@ -708,9 +710,10 @@ createTheDivs(allArray);
 
 // #region --------------------- FILTERING THROUGH DATA INTERACTION + VISUALISATION ---------------------
 
-
+// ------------------------------------------ NATIVE DOM ------------------------------------------
     nativeFilterBtn.addEventListener("click", function() {
         nativeTreesDOM = "";
+        keyText.innerHTML = `Visualizing ${nativeTreesTotalNumber} New York City trees by`;
         // mainContainer.innerHTML = " ";
         
         function createNativeDivs(arr) { 
@@ -776,8 +779,12 @@ createTheDivs(allArray);
     
     });
 
+
+
+// ------------------------------------------ NON NATIVE DOM ------------------------------------------
     nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeTreesDOM = "";
+        keyText.innerHTML = `Visualizing ${nonNativeTreesTotalNumber} New York City trees by`;
         
         
         function createNonNativeDivs(arr) { 
@@ -924,3 +931,36 @@ createTheDivs(allArray);
 // #endregion end
 
 
+// #region --------------------- VISUALIZATION CREATION TRIALS ---------------------
+    
+
+    // allArray.forEach(function createDivs() {
+    //     treesDOM += `<div class="tree-container">`;
+
+    //     for (i=0; i<Math.floor(allArray[i].length/100); i++) { 
+    //         treesDOM += `<div class="tree-${[i]}"></div>`
+    //     };
+
+    //     treesDOM += `</div>`
+
+    // })
+
+    // function createDivs (arr) {
+    //     treesDOM += `<div class="tree-container">`;
+    //     for (i=0; i< Math.floor(arr[i].length/100); i++) {
+    //         treesDOM += `<div class="tree-${[i]}"></div>`
+    //     };
+    //     treesDOM += `</div>`
+    // }
+    
+    // treesDOM += `<div class="tree-container">`;
+    // for (i = 0; i < Math.floor(pinOakArray.length/100); i++) {
+    // treesDOM += `<div class="box"></div>`
+    // };
+
+    // createDivs(allArray);
+
+
+    // treesDOM += `</div>`
+
+    // #endregion
