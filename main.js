@@ -28,10 +28,15 @@ let forestBtn = document.querySelector("#forest_btn");
 
 let keyText = document.querySelector('#key-text');
 
-let keyFlex = document.querySelector("#key-flex");
+let keyFlex = document.querySelector(".key-flex");
 
 let internalImagePath = "../canopy/assets/";
 
+let aboutBtn = document.querySelector('#about');
+
+let aboutDOM = "";
+
+console.log(aboutBtn);
 
 
 // #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
@@ -707,7 +712,7 @@ console.log(allTreesTotalNumber);
 
 //#endregion
 
-/* ------------------------------------ CREATING TINY DIV VISUALIZATIONS -------------------------------- */
+/* ------------------------------------ CREATING BASE TINY DIV VISUALIZATIONS -------------------------------- */
 
 function roundToTwo(num) {
     return +(Math.round(num + "e+2")  + "e-2");
@@ -993,7 +998,7 @@ percentageFilterBtn.addEventListener("click", function() {
 
 
 
-// #region --------------------- MAIN FILTERS  ---------------------
+// #region ------------------------------------------ MAIN FILTERS  --------------------------------------
 
 forestBtn.addEventListener("click", function () {
     forestDOM = "";
@@ -1022,7 +1027,71 @@ forestBtn.addEventListener("click", function () {
 // #endregion
 
  
+// #region ------------------------------------------ ABOUT PAGE ------------------------------------------
 
+aboutBtn.addEventListener("click", function() {
+
+    aboutDOM = "";
+
+
+    mainContainer.innerHTML = "";
+    
+
+    function createAboutDOM() { 
+        keyFlex.innerHTML = "";
+
+        aboutDOM += `<div id="aboutContainer">`
+
+        aboutDOM += `<div id="leftSidebar">`
+        aboutDOM += `</div>`
+
+        aboutDOM += `<div id ="rightSidebar">`
+
+        aboutDOM += 
+        `<p class="body-text">
+        
+
+        Indigenous ecologies play an important role in an urban landscape. Nativity of plants, animals and peoples are vital for these ecologies to thrive.
+
+        <br><br>The most recent street tree census conducted in 2016 by the New York City Department of Parks & Recreation (NYCDPR) counted 666,134 street trees citywide, a 12.5% increase from the count in 2005. However, the ratio of native to non-native plants across the city (streets, parks, pedestals, etc.) is concerning. For example, the flora of Central Park is only 46% native and 54% non-native
+        
+        
+        <br><br>Without native plants and the insects that co-evolve with them, birds cannot survive, which impacts the food web, leading to severe consequences for its ecology. The modern obsession for perfectly manicured green spaces is increasing and, in that process, harming most species living in that landscape. For example, the vast lawns in the city created a green monoculture carpet which no longer supports functioning ecosystems
+        
+        <br><br> An excellent example that demonstrates the difference between native and non-native biodiversity are the research findings of entomologist Doug Tallamy, which revealed that native oak trees support over 500 species of caterpillars whereas ginkgos (which occupy 9.4% of Manhattans street tree canopy) only house 5 species. This difference is critical when put into context: it takes over 6000 caterpillars to raise a single brood of chickadees, a North American titmouse.
+
+        <br><br>Canopy is a website visualizing the data from NYC Open Data's 2015 Street Tree Census - Tree Data API dataset. With this visualization, my aim is highlight the alarming, asymmetric ratio of native and non-native tree species in New York City. 
+
+        <br><br>Jarring, digitized colors have been used to reference the perfectly manicured, evergreen non-native species that have taken over New York City. In contrast, I attempted to use natural, earthier colors for the native species - colors probably resembling their average mass tone. Visual inspiration for this website comes from satellite views of croplands and plantations. 
+
+        <br><br> All images have been taken from PlantNet, an open source archive of botanical references.
+
+        </p>`
+
+        aboutDOM += `</div>`
+
+
+
+
+        aboutDOM += `</div>`
+        mainContainer.innerHTML = aboutDOM;
+
+    }
+    
+    createAboutDOM();
+
+    mainContainer.innerHTML = aboutDOM;
+
+    
+    
+
+});
+
+
+
+
+
+// #endregion
 
 
 // ****** THEN RESPONSE FIN *******

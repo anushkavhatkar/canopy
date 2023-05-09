@@ -652,6 +652,27 @@ border-bottom: .1em black solid;
 
 /* #endregion */
 
+
+/* #region ------------------------------------ ABOUT PAGE PROPERTIES ------------------------------------ */ 
+
+#aboutContainer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#leftSidebar { 
+    width: 30%;
+}
+
+#rightSidebar { 
+    width: 45%;
+}
+
+
+/* #endregion */
+
+
 /* #region  SMOOTH SCROLL ANIMATION */
 
 /* .reveal{
