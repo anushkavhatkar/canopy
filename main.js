@@ -589,13 +589,16 @@ function roundToTwo(num) {
 function revealInfoBlocks () {
 
     let treeVisualisations = document.getElementsByClassName('viz-container');
+    let infoContainers = document.getElementsByClassName('info-block');
+    
     
     for (let i=0; i <treeVisualisations.length; i++) {
-        let infoContainers = document.getElementsByClassName('info-block');
-    
+        
         treeVisualisations[i].addEventListener("click", () => {
     
             treeVisualisations[i].classList.toggle('info-block-active');
+
+
     
             if (treeVisualisations[i].classList.contains('info-block-active')) {
                 infoContainers[i].style.height = infoContainers[i].scrollHeight + "px"; 
@@ -608,6 +611,8 @@ function revealInfoBlocks () {
         })
     }
     };
+
+
 
 function createTheDivs(arr) { 
         for (let i=0; i < arr[i].length; i++) {
@@ -656,11 +661,12 @@ function createTheDivs(arr) {
             mainContainer.innerHTML = treesDOM;
 
                     
+
 } // forloop end
 
 
- 
 revealInfoBlocks();
+
 
 
 
@@ -681,10 +687,11 @@ createTheDivs(allArray);
 
         treesDOM = "";
         createTheDivs(allArray);
-        revealInfoBlocks();
+        
 
         mainContainer.innerHTML = treesDOM;
 
+        revealInfoBlocks();
         
 
     });
@@ -712,11 +719,21 @@ createTheDivs(allArray);
     
                 nativeTreesDOM += `</div>`
                 nativeTreesDOM += `</div>`
+
+                mainContainer.innerHTML = nativeTreesDOM;
             }
+
+            
+
+            
+
         };
     
         createNativeDivs(allNativeArray);
     
+        mainContainer.innerHTML = nativeTreesDOM;
+
+        
     
     });
 
@@ -738,11 +755,20 @@ createTheDivs(allArray);
     
                 nonNativeTreesDOM += `</div>`
                 nonNativeTreesDOM += `</div>`
+
+                mainContainer.innerHTML = nonNativeTreesDOM;
             }
+
+            
+
         };
     
         createNonNativeDivs(allNonNativeArray);
     
+        mainContainer.innerHTML = nonNativeTreesDOM;
+
+        
+        
     
     });
 // #endregion 
@@ -803,5 +829,25 @@ createTheDivs(allArray);
 // THEN RESPONSE FIN
   }); // 
 
+
+
+
+//#region choppy but working accordion
+// for (let i = 0; i < treeVisualisations.length; i++) {
+
+//     treeVisualisations[i].addEventListener("click", function () {
+//       let infoContainers = document.getElementsByClassName('info-block');
+//       console.log(infoContainers);
+
+//       if (infoContainers[i].style.display !== "none") {
+//         infoContainers[i].style.display = "none";
+//      
+//       } else {
+//         infoContainers[i].style.display = "block";
+//      
+//       }
+//     });
+//   } 
+// #endregion end
 
 
