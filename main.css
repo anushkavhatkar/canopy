@@ -43,6 +43,8 @@
     --pin-oak: #2B4D32;
 
 
+
+
     --turkish-hazelnut: #2ADB31;
     --hardy-rubber-tree: #B3ED39;
     --european-beech: #D5F21F;
@@ -77,6 +79,29 @@
     --norway-maple: #00C766; 
     --sycamore-maple: #CFF16F;
     
+    --european-alder: #B5DF3C;
+    --black-locust: #D8DC2C;
+    --catalpa: #C7E8DC;
+    --atlas-cedar: #FFE600;
+    --atlantic-white-cedar: #FFF500;
+    --himalayan-cedar: #B4E9CF;
+    --corktree: #CEF6DC;
+    --eastern-cottonwood: #ECFFB5;
+    --dawn-redwood: #66F40F;
+    --siberian-elm: #02DC59;
+    --chinese-elm: #C3FF43;
+    --empress-tree: #C4EB71;
+    --eastern-hemlock: #4FCB79;
+    --japanese-snowbell: #4FCB97;
+    --katsura: #60CB4F;
+    --southern-magnolia: #8DCB4F;
+    --osage-orange: #9FE25B;
+    --scots-pine:  #E3FD7D;
+    --black-pine: #7DFDCF;
+    --silverbell: #60B596;
+    --norway-spruce: #1CBDA0;
+    --blue-spruce: #3AB600;
+    --heaven: #00B649;
 
 
 
@@ -649,6 +674,8 @@ border-bottom: .1em black solid;
 .sycamore-maple {
     background-color: var(--sycamore-maple);
 }
+
+
 
 /* #endregion */
 
