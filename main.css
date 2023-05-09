@@ -693,6 +693,167 @@ border-bottom: .1em black solid;
 }
 
 
+.european-alder {
+    background-color: var(--european-alder);
+}
+
+.ash {
+    background-color: var(--ash);
+}
+
+.green-ash {
+    background-color: var(--green-ash);
+}
+
+.white-ash {
+    background-color: var(--white-ash);
+}
+
+.black-locust {
+    background-color: var(--black-locust);
+}
+
+.catalpa {
+    background-color: var(--catalpa);
+}
+
+.atlantic-white-cedar {
+    background-color: var(--atlantic-white-cedar);
+}
+
+.atlas-cedar {
+    background-color: var(--atlas-cedar);
+}
+
+.himalayan-cedar {
+    background-color: var(--himalayan-cedar);
+}
+
+.chokecherry {
+    background-color: var(--chokecherry);
+}
+
+.amur-cork-tree {
+    background-color: var(--corktree);
+}
+
+.eastern-cottonwood {
+    background-color: var(--eastern-cottonwood);
+}
+
+.dawn-redwood {
+    background-color: var(--dawn-redwood);
+}
+
+.douglas-fir {
+    background-color: var(--douglas-fir);
+}
+
+.eastern-redcedar {
+    background-color: var(--eastern-redcedar);
+}
+
+.american-elm { 
+    background-color: var(--american-elm);
+}
+
+.chinese-elm { 
+    background-color: var(--chinese-elm);
+}
+
+.siberian-elm { 
+    background-color: var(--siberian-elm);
+}
+
+.empress-tree {
+    background-color: var(--empress-tree);
+}
+
+.eastern-hemlock {
+    background-color: var(--eastern-hemlock);
+}
+
+.holly { 
+    background-color: var(--holly);
+}
+
+.japanese-snowbell {
+    background-color: var(--japanese-snowbell);
+}
+
+.katsura-tree {
+    background-color: var(--katsura);
+}
+
+.american-larch {
+    background-color: var(--american-larch);
+}
+
+.magnolia {
+    background-color: var(--magnolia);
+}
+
+.southern-magnolia {
+    background-color: var(--southern-magnolia);
+}
+
+.cucumber-magnolia {
+    background-color: var(--cucumber-magnolia);
+}
+
+.mulberry {
+    background-color: var(--mulberry);
+}
+
+.osage-orange {
+    background-color: var(--osage-orange);
+}
+
+.pagoda-dogwood {
+    background-color: var(--padogda-dogwood);
+}
+
+.white-pine {
+    background-color: var(--white-pine)
+}
+
+.red-pine {
+    background-color: var(--red-pine);
+}
+
+.scots-pine { 
+    background-color: var(--scots-pine);
+}
+
+.black-pine {
+    background-color: var(--black-pine);
+}
+
+.silverbell {
+    background-color: var(--silverbell);
+}
+
+.spruce { 
+    background-color: var(--spruce);
+}
+
+.norway-spruce { 
+    background-color: var(--norway-spruce);
+}
+
+.blue-spruce {
+    background-color: var(--blue-spruce);
+}
+
+.tree-of-heaven {
+    background-color: var(--heaven);
+}
+
+.black-walnut {
+    background-color: var(--walnut);
+}
+
+
 
 /* #endregion */
 
