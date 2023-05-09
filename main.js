@@ -24,6 +24,8 @@ let nonNativeFilterBtn = document.querySelector('#non-native-filter');
 
 let percentageFilterBtn = document.querySelector('#percentage-filter');
 
+let aTreeBtn = document.querySelector('#tree_btn');
+
 let forestBtn = document.querySelector("#forest_btn");
 
 let keyText = document.querySelector('#key-text');
@@ -991,7 +993,58 @@ percentageFilterBtn.addEventListener("click", function() {
     });
     // #endregion
 
+//#region ----------------------- A TREE FUNCTION -----------------------
 
+
+aTreeBtn.addEventListener("click", function() {
+
+    keyFlex.innerHTML = "";
+
+    keyFlex.innerHTML = 
+    `
+    <div>
+            
+        <div id="key-text"></div>
+        
+        <div class="body-text sub-filters-flex">
+            <div id="percentage-filter" class="sub-filter">view all </div>
+            <div id="native-filter" class="sub-filter">native </div> 
+            <div id="non-native-filter" class="sub-filter">non-native </div>
+            <!-- <div id="compare-filter" class="sub-filter">compare </div> -->
+        </div>
+
+
+        </div>
+
+        <div>
+            1 square = 100 trees
+        </div>
+    `;
+
+    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+
+    treesDOM = "";
+    
+
+    createTheDivs(allArray);
+    
+
+    mainContainer.innerHTML = treesDOM;
+
+    revealInfoBlocks();
+    
+
+
+
+
+});
+
+
+//#endregion 
+
+
+
+    
 // #endregion 
 
 
