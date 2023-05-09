@@ -1,3 +1,7 @@
+// #region -------------------------------- ROOT VARIABLES --------------------------------
+
+
+
 const APP_TOKEN = 'YEAf7HhwEpQfNrdeSPEwxXv58';
 
 const DATASET_IDENTIFIER = 'uvpi-gqnh';
@@ -17,6 +21,8 @@ let nativeFilterBtn = document.querySelector('#native-filter');
 let nonNativeFilterBtn = document.querySelector('#non-native-filter');
 
 let percentageFilterBtn = document.querySelector('#percentage-filter');
+
+// #endregion
 
 // #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
 
@@ -118,6 +124,8 @@ const url = `https://data.cityofnewyork.us/resource/${DATASET_IDENTIFIER}.json?$
 
 console.log(`Fetching url - ${url}`);
 // #endregion
+
+// #region COLLAPSE ALL
 
 fetch(url)
   .then((response) => response.json())
@@ -708,8 +716,38 @@ createTheDivs(allArray);
         function createNativeDivs(arr) { 
             for (let k=0; k < arr[k].length; k++) {
 
-                nativeTreesDOM += `<div class="viz-container reveal active">`;
+                nativeTreesDOM += `<div class="viz-container">`;
                 nativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
+
+                // INFO 
+                nativeTreesDOM += `<div class="info-block">`
+                nativeTreesDOM += `<div class="info-flex">`;
+                nativeTreesDOM += `<div class="info-img"></div>`;
+                nativeTreesDOM += `<div class="info-img"></div>`;
+
+                nativeTreesDOM += `<div class="info-container body-text" data-height="auto">`
+                nativeTreesDOM += `<p id="content">
+                        <span>Common Name</span>
+                        <br>${arr[k][k].spc_common_name}</p>
+
+                        <p>
+                        <br><span>Scientific Name</span>
+                        <br>${arr[k][k].spc_latin}</p>
+
+                        <p>
+                        <br><span>Percentage</span>
+                        <br> ${roundToTwo((arr[k].length/LIMIT)*100)}%</p>
+
+                        <p>
+                        <br><span>Total Number of Trees</span>
+                        <br>${arr[k].length}</p>`
+
+
+
+                nativeTreesDOM += `</div>` // info container end
+                nativeTreesDOM += `</div>` // info flex end
+                nativeTreesDOM += `</div>` // info block end
+                //INFO END
     
                 nativeTreesDOM += `<div class="tree-container">`;
     
@@ -723,17 +761,18 @@ createTheDivs(allArray);
                 mainContainer.innerHTML = nativeTreesDOM;
             }
 
-            
+            revealInfoBlocks();
 
             
 
         };
     
         createNativeDivs(allNativeArray);
+        
     
         mainContainer.innerHTML = nativeTreesDOM;
 
-        
+        revealInfoBlocks();
     
     });
 
@@ -746,6 +785,38 @@ createTheDivs(allArray);
 
                 nonNativeTreesDOM += `<div class="viz-container reveal active">`;
                 nonNativeTreesDOM += `<p class="body-text">${arr[k][k].spc_common_name} </p>`;
+
+                // INFO 
+                nonNativeTreesDOM += `<div class="info-block">`
+                nonNativeTreesDOM += `<div class="info-flex">`;
+                nonNativeTreesDOM += `<div class="info-img"></div>`;
+                nonNativeTreesDOM += `<div class="info-img"></div>`;
+
+                nonNativeTreesDOM += `<div class="info-container body-text" data-height="auto">`
+                nonNativeTreesDOM += `<p id="content">
+                        <span>Common Name</span>
+                        <br>${arr[k][k].spc_common_name}</p>
+
+                        <p>
+                        <br><span>Scientific Name</span>
+                        <br>${arr[k][k].spc_latin}</p>
+
+                        <p>
+                        <br><span>Percentage</span>
+                        <br> ${roundToTwo((arr[k].length/LIMIT)*100)}%</p>
+
+                        <p>
+                        <br><span>Total Number of Trees</span>
+                        <br>${arr[k].length}</p>`
+
+
+
+                nonNativeTreesDOM += `</div>` // info container end
+                nonNativeTreesDOM += `</div>` // info flex end
+                nonNativeTreesDOM += `</div>` // info block end
+                //INFO END
+
+
     
                 nonNativeTreesDOM += `<div class="tree-container">`;
     
@@ -759,6 +830,7 @@ createTheDivs(allArray);
                 mainContainer.innerHTML = nonNativeTreesDOM;
             }
 
+            revealInfoBlocks();
             
 
         };
@@ -767,6 +839,7 @@ createTheDivs(allArray);
     
         mainContainer.innerHTML = nonNativeTreesDOM;
 
+        revealInfoBlocks();
         
         
     
@@ -828,7 +901,7 @@ createTheDivs(allArray);
 
 // THEN RESPONSE FIN
   }); // 
-
+// #endregion
 
 
 
