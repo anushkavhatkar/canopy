@@ -165,7 +165,7 @@ a {
   font-size: calc(var(--filter-text-size) * 2);
   z-index: 9;
   color: var(--light-white);
-  position: absolute;
+  position: absolute !important;
   cursor: crosshair;
 }
 
