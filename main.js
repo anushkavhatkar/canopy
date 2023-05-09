@@ -1,4 +1,4 @@
-// -------------------------------- ROOT VARIABLES --------------------------------
+// #region -------------------------------- ROOT VARIABLES --------------------------------
 
 
 
@@ -39,6 +39,8 @@ let aboutBtn = document.querySelector('#about');
 let aboutDOM = "";
 
 console.log(aboutBtn);
+
+// #endregion
 
 
 // #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
