@@ -559,8 +559,8 @@ fetch(url)
 // #endregion
 
     
-    console.log(allArray); 
-    console.log(allNativeArray);
+    // console.log(allArray); 
+    // console.log(allNativeArray);
 
 //#region ---------------------CALCULATING INTERNAL ARRAY LENGTHS (TOTAL NO. OF TREES) ---------------------
 
