@@ -66,17 +66,29 @@ function size(){
         }
     });
     
-    window.addEventListener("mousemove", function(e){
-      let mouseX = e.pageX;
-      let mouseY = e.pageY;
+    // window.addEventListener("mousemove", function(e){
+    //   let mouseX = e.pageX;
+    //   let mouseY = e.pageY;
     
-      hoverText.style.top = mouseX + "px";
-      hoverText.style.left = mouseY + "px";
+    //   hoverText.style.top = mouseX + "px";
+    //   hoverText.style.left = mouseY + "px";
       
-    });
+    // });
     
     
   }
+
+  document.addEventListener("mousemove", handleMousePos);
+
+  function handleMousePos(event) {
+    var mouseX = event.clientX;
+    var mouseY = event.clientY; 
+
+    hoverText.style.top = mouseY + "px";
+    hoverText.style.left = mouseX + "px";
+  }
+
+
 };
 
 // document.addEventListener("mousemove", function(e){
