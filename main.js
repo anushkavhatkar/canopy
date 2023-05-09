@@ -756,7 +756,7 @@ function createTheDivs(arr) {
             treesDOM += `<div class="info-img" style="background-image: url('${arr[i][i].imageTwo}'); background-size: cover;"></div>`;
 
 
-            treesDOM += `<div class="info-container body-text" data-height="auto">`
+            treesDOM += `<div class="info-container body-text">`
             treesDOM += `<p id="content">
                         <span>Common Name</span>
                         <br>${arr[i][i].spc_common_name}</p>
@@ -855,8 +855,8 @@ percentageFilterBtn.addEventListener("click", function() {
                 // INFO 
                 nativeTreesDOM += `<div class="info-block">`
                 nativeTreesDOM += `<div class="info-flex">`;
-                nativeTreesDOM += `<div class="info-img"></div>`;
-                nativeTreesDOM += `<div class="info-img"></div>`;
+                nativeTreesDOM += `<div class="info-img" style="background-image: url('${arr[k][k].imageOne}'); background-size: cover;"></div>`;
+                nativeTreesDOM += `<div class="info-img" style="background-image: url('${arr[k][k].imageTwo}'); background-size: cover;"></div>`;
 
                 nativeTreesDOM += `<div class="info-container body-text" data-height="auto">`
                 nativeTreesDOM += `<p id="content">
@@ -927,8 +927,8 @@ percentageFilterBtn.addEventListener("click", function() {
                 // INFO 
                 nonNativeTreesDOM += `<div class="info-block">`
                 nonNativeTreesDOM += `<div class="info-flex">`;
-                nonNativeTreesDOM += `<div class="info-img"></div>`;
-                nonNativeTreesDOM += `<div class="info-img"></div>`;
+                nonNativeTreesDOM += `<div class="info-img" style="background-image: url('${arr[k][k].imageOne}'); background-size: cover;"></div>`;
+                nonNativeTreesDOM += `<div class="info-img" style="background-image: url('${arr[k][k].imageTwo}'); background-size: cover;"></div>`;
 
                 nonNativeTreesDOM += `<div class="info-container body-text" data-height="auto">`
                 nonNativeTreesDOM += `<p id="content">
