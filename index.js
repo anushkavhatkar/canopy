@@ -66,7 +66,7 @@ function size(){
         }
     });
     
-    document.addEventListener("mousemove", function(e){
+    window.addEventListener("mousemove", function(e){
       let mouseX = e.clientX;
       let mouseY = e.clientY;
     
