@@ -169,3 +169,14 @@ a {
   cursor: crosshair;
 }
 
+.hover-native { 
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: .02em;
+  font-size: calc(var(--filter-text-size) * 2);
+  z-index: 9;
+  color: var(--light-white);
+  position: absolute !important;
+  cursor: crosshair;
+}
