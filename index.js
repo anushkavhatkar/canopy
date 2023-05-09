@@ -21,6 +21,7 @@ let treeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "
 // #region -------------------------------- CANOPY RANDOMIZER --------------------------------
 
 let mainContainer = document.querySelector('#container');
+let hoverText = document.querySelector('#hover-native');
 
 window.addEventListener('load',function(){
 	size();
@@ -46,7 +47,7 @@ function size(){
     // box.style.height = window.innerHeight/20 + "px";
     // box.style.width = window.innerHeight/20 + "px";
     
-    let hoverText = document.querySelector('#hover-native');
+    // let hoverText = document.querySelector('#hover-native');
     let squareDivs = document.querySelectorAll('.box');
   console.log(typeof(squareDivs));
   console.log(squareDivs);
@@ -65,27 +66,27 @@ function size(){
         }
     });
     
-    // document.addEventListener("mousemove", function(e){
-    //   let mouseX = e.clientX;
-    //   let mouseY = e.clientY;
+    document.addEventListener("mousemove", function(e){
+      let mouseX = e.clientX;
+      let mouseY = e.clientY;
     
-    //   hoverText.style.top = e.clientX + "px";
-    //   hoverText.style.left = e.clientY + "px";
+      hoverText.style.top = e.clientX + "px";
+      hoverText.style.left = e.clientY + "px";
       
-    // });
+    });
     
     
   }
 };
 
-document.addEventListener("mousemove", function(e){
-  let mouseX = e.clientX;
-  let mouseY = e.clientY;
+// document.addEventListener("mousemove", function(e){
+//   let mouseX = e.clientX;
+//   let mouseY = e.clientY;
 
-  hoverText.style.top = e.clientX + "px";
-  hoverText.style.left = e.clientY + "px";
+//   hoverText.style.top = e.clientX + "px";
+//   hoverText.style.left = e.clientY + "px";
   
-});
+// });
 
 window.addEventListener('resize',function(){
 	size();
