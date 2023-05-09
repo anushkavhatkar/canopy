@@ -67,11 +67,11 @@ function size(){
     });
     
     window.addEventListener("mousemove", function(e){
-      let mouseX = e.clientX;
-      let mouseY = e.clientY;
+      let mouseX = e.pageX;
+      let mouseY = e.pageY;
     
-      hoverText.style.top = e.clientX + "px";
-      hoverText.style.left = e.clientY + "px";
+      hoverText.style.top = mouseX + "px";
+      hoverText.style.left = mouseY + "px";
       
     });
     
