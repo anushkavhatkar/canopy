@@ -1,4 +1,4 @@
-// #region -------------------------------- ROOT VARIABLES --------------------------------
+// #region ROOT VARIABLES --------------------------------
 
 
 
@@ -43,7 +43,7 @@ console.log(aboutBtn);
 // #endregion
 
 
-// #region --------------------------------- ALL TREE SPECIES ARRAYS ------------------------------------
+// #region ALL TREE SPECIES ARRAYS ------------------------------------
 
 let allArray = [];
 let allNativeArray = [];
@@ -163,7 +163,7 @@ let blackWalnutArray = [];
 // #endregion
 
 
-// #region --------------------------------  TREE COLOR ARRAYS  ------------------------------------
+// #region TREE COLOR ARRAYS  ------------------------------------
 
 
 let nonNativeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "#00CE78", "#0AFA5C", "#0CF090", "#DBFF00", "#80FF00", "#00FFA3", "#6AFBA4", "#5DD8B3", "#00CF08", "#C9E518", "#EBEE6D","#01AF5A", "#00FF19", "#20E0A6", "#20E084", "#6BEE90", "#B3ECB2", "#76DAA4", "#5CE05A", "#00FF75","#91FF8E", "#B0FF62", "#93FF26","#76EC00","#D8FAA0","#CDFF7A","#14B87D", "#00C766", "#CFF16F", 
@@ -191,7 +191,7 @@ let treeColorsArray = [ "#2ADB31", "#B3ED39", "#D5F21F", "#ACEB44", "#02E34F", "
 
 
 
-/* ------------------------------------  API FETCH  ------------------------------------ */
+// API FETCH  ------------------------------------ 
 
 // #region URL CONSTRUCT
 
@@ -200,7 +200,8 @@ const url = `https://data.cityofnewyork.us/resource/${DATASET_IDENTIFIER}.json?$
 
 console.log(`Fetching url - ${url}`);
 // #endregion
-keyText.innerHTML = `Visualizing . . .  New York City trees by`;
+
+keyText.innerHTML = `Now Visualizing . . .  New York City trees`;
 
 // #region COLLAPSE ALL
 
@@ -1030,7 +1031,7 @@ fetch(url)
 
    
 
-    // #region --------------------- ARRAY CONSTRUCTION - ALL, NATIVE, NON NATIVE --------------------- 
+// #region ARRAY CONSTRUCTION - ALL, NATIVE, NON NATIVE ------------------------------------  
    
 
     allArray.push(pinOakArray, redMapleArray, honeylocustArray, americanLindenArray, londonPlanetreeArray, ginkgoArray, americanElmArray, sophoraArray, calleryPearArray, littleleafLindenArray, fastigiataOakArray, sweetgumArray, dawnRedwoodArray, baldcypressArray, coffeetreesArray, northernRedOakArray, swampWhiteOakArray, shingleOakArray, willowOakArray, crimeanLindenArray, silverLindenArray, riverBirchArray, hackberryArray, katsuraTreeArray, turkishHazelnutArray, hardyRubberTreeArray, europeanBeechArray, kentuckyCoffeetreeArray, tulipTreeArray, blackgumArray, sawtoothOakArray, whiteOakArray, scarletOakArray, burOakArray, englishOakArray, redOakArray, schumardOakArray, blackOakArray, baldCypressArray, chineseElmArray, japaneseZelkovaArray, redHorsechestnutArray, europeanHornbeamArray, americanHornbeamArray, japaneseHornbeamArray, kentuckyYellowwoodArray, goldenRaintreeArray, amurMaackiaArray, persianIronwoodArray, hedgeMapleArray,amurMapleArray, paperbarkMapleArray, tartarMapleArray, shantungMapleArray, serviceberryArray, redbudArray, chineseFringetreeArray, kousaDogwoodArray, cornelianCherryArray, cockspurHawthornArray, crabappleArray, purpleLeafPlumArray, japaneseTreeLilacArray, chineseTreeLilacArray, norwayMapleArray, sycamoreMapleArray,
@@ -1054,28 +1055,9 @@ fetch(url)
      // #endregion
 
 
-// #region --------------------- SORT ARRAYS BY PERCENTAGE ---------------------
+// #region MATH FUNCTIONS ------------------------------------  
 
-/* ------------------------------------ SORTING ARRAYS BY PERCENTAGE ------------------------------------ */
-    
-    let sorter = (a, b) => {
-        if(a.length > b.length) {
-           return -1;
-        } else {
-           return 1;
-        }
-    }
-    
-    allArray.sort(sorter);
-    allNativeArray.sort(sorter);
-    allNonNativeArray.sort(sorter);
-// #endregion
-
-    
-    // console.log(allArray); 
-    // console.log(allNativeArray);
-
-//#region ---------------------CALCULATING INTERNAL ARRAY LENGTHS (TOTAL NO. OF TREES) ---------------------
+//#region ------------CALCULATING INTERNAL ARRAY LENGTHS (TOTAL NO. OF TREES) ---------------------
 
 let allNativeTreesNumber = 0;
 let allNonNativeTreesNumber = 0;
@@ -1103,11 +1085,49 @@ console.log(allTreesTotalNumber);
 
 //#endregion
 
-/* ------------------------------------ CREATING BASE TINY DIV VISUALIZATIONS -------------------------------- */
+// #region -----------SORT ARRAYS BY PERCENTAGE ---------------------
 
+
+    
+    let sorter = (a, b) => {
+        if(a.length > b.length) {
+           return -1;
+        } else {
+           return 1;
+        }
+    }
+    
+    allArray.sort(sorter);
+    allNativeArray.sort(sorter);
+    allNonNativeArray.sort(sorter);
+
+
+    
+    // console.log(allArray); 
+    // console.log(allNativeArray);
+
+
+
+
+
+//#endregion
+
+
+// Taken from MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 function roundToTwo(num) {
     return +(Math.round(num + "e+2")  + "e-2");
 }
+
+
+//#endregion 
+
+
+
+
+
+// #region CREATING DOM/ BASE TINY DIV VISUALIZATIONS -------------------------------- 
+
+
 
 function revealInfoBlocks () {
 
@@ -1136,7 +1156,7 @@ function revealInfoBlocks () {
     }
     };
 
-    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+    keyText.innerHTML = `Now Visualizing ${allTreesTotalNumber} New York City trees`;
 
 
 
@@ -1209,7 +1229,7 @@ revealInfoBlocks();
 
 createTheDivs(allArray);
 
-
+//#endregion
     
 
 
@@ -1217,14 +1237,14 @@ createTheDivs(allArray);
 
 
 
-// #region ------------------------------------------ SUB FILTERS  ------------------------------------------
+// #region SUB FILTERS  ------------------------------------------
 
-//#region ----------------------- VIEW ALL DOM -----------------------
+        //#region VIEW ALL DOM -----------------------
 
 percentageFilterBtn.addEventListener("click", function() {
 
     treesDOM = "";
-    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+    keyText.innerHTML = `Now Visualizing ${allTreesTotalNumber} New York City trees`;
 
     createTheDivs(allArray);
     
@@ -1237,11 +1257,11 @@ percentageFilterBtn.addEventListener("click", function() {
 });
 //#endregion
 
-    //#region ----------------------- NATIVE DOM -----------------------
+        //#region  NATIVE DOM -----------------------
 
     nativeFilterBtn.addEventListener("click", function() {
         nativeTreesDOM = "";
-        keyText.innerHTML = `Visualizing ${nativeTreesTotalNumber} New York City trees by`;
+        keyText.innerHTML = `Now Visualizing ${nativeTreesTotalNumber} New York City trees`;
         // mainContainer.innerHTML = " ";
         
         function createNativeDivs(arr) { 
@@ -1309,11 +1329,11 @@ percentageFilterBtn.addEventListener("click", function() {
     //#endregion
 
 
-    // #region ----------------------- NON NATIVE DOM -----------------------
+        // #region  NON NATIVE DOM -----------------------
 
     nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeTreesDOM = "";
-        keyText.innerHTML = `Visualizing ${nonNativeTreesTotalNumber} New York City trees by`;
+        keyText.innerHTML = `Now Visualizing ${nonNativeTreesTotalNumber} New York City trees`;
         
         
         function createNonNativeDivs(arr) { 
@@ -1382,7 +1402,40 @@ percentageFilterBtn.addEventListener("click", function() {
     });
     // #endregion
 
-//#region ----------------------- A TREE FUNCTION -----------------------
+
+
+
+    
+// #endregion 
+
+
+
+
+
+// #region MAIN FILTERS  --------------------------------------
+
+forestBtn.addEventListener("click", function () {
+    forestDOM = "";
+
+    keyFlex.innerHTML = 
+    `<div>
+            Visualizing all ${allTreesTotalNumber} New York City trees
+    </div>
+
+    <div>
+        1 square = 100 trees
+    </div>`;
+
+
+    mainContainer.innerHTML = forestDOM;
+
+
+
+});
+
+
+    
+//#region A TREE FUNCTION -----------------------
 
 
 aTreeBtn.addEventListener("click", function() {
@@ -1391,7 +1444,7 @@ aTreeBtn.addEventListener("click", function() {
 
     keyFlex.innerHTML = 
     `
-    <div>
+    
             
         <div id="key-text"></div>
         
@@ -1403,14 +1456,14 @@ aTreeBtn.addEventListener("click", function() {
         </div>
 
 
-        </div>
+        
 
         <div>
             1 square = 100 trees
         </div>
     `;
 
-    keyText.innerHTML = `Visualizing ${allTreesTotalNumber} New York City trees by`;
+    keyText.innerHTML = `Now Visualizing ${allTreesTotalNumber} New York City trees`;
 
     treesDOM = "";
     
@@ -1433,43 +1486,12 @@ aTreeBtn.addEventListener("click", function() {
 
 
 
-    
-// #endregion 
-
-
-
-
-
-// #region ------------------------------------------ MAIN FILTERS  --------------------------------------
-
-forestBtn.addEventListener("click", function () {
-    forestDOM = "";
-
-    keyFlex.innerHTML = 
-    `<div>
-            Visualizing all ${allTreesTotalNumber} New York City trees
-    </div>
-
-    <div>
-        1 square = 100 trees
-    </div>`;
-
-
-    mainContainer.innerHTML = forestDOM;
-
-
-
-});
-
-
-
-
 
 
 // #endregion
 
  
-// #region ------------------------------------------ ABOUT PAGE ------------------------------------------
+// #region ABOUT PAGE ------------------------------------------
 
 aboutBtn.addEventListener("click", function() {
 
@@ -1536,8 +1558,8 @@ aboutBtn.addEventListener("click", function() {
 // #endregion
 
 
-// ****** THEN RESPONSE FIN *******
-  }); 
+
+  });  // THEN RESPONSE FIN 
 // #endregion
 
 

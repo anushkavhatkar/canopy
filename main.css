@@ -354,34 +354,39 @@ span {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 7.5em;
-    /* position:sticky; */
 }
 
 
-/* #percentage-filter:hover #non-native-filter:hover #native-filter:hover {
-border-bottom: .1em black solid;
+/* #key-text {
+    width: 33%;
 } */
 
 
 .sub-filters-flex {
     display: flex;
+    width: 33%;
 }
 
 .sub-filter {
-    margin: 0.5em .5em .5em 0;
-    padding: .35em .75em;
-    background-color: var(--light-white);
-    border: black solid .075em;
+    
+    padding: 0 .5em;
+    /* background-color: var(--light-white);
+    border: black solid .075em; */
     border-radius: .5em;
     width: max-content;
     transition: ease-in-out .25s;
 }
 
 .sub-filter:hover {
-    background-color: var(--light-grey);
+    /* background-color: var(--light-grey); */
     
+    text-decoration: underline .1em var(--black);
     cursor: pointer;
 }
+
+/* #key {
+    width: 33%;
+} */
 
 /* #endregion */
 
