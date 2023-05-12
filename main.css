@@ -349,10 +349,17 @@ span {
 
 /* #region KEY LEGEND STYLING */
 
-.key-flex {
+/* .key-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 7.5em;
+} */
+
+.key-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
     margin-top: 7.5em;
 }
 
@@ -364,7 +371,7 @@ span {
 
 .sub-filters-flex {
     display: flex;
-    width: 33%;
+    justify-self: center;
 }
 
 .sub-filter {
@@ -384,19 +391,18 @@ span {
     cursor: pointer;
 }
 
-/* #key {
-    width: 33%;
-} */
+#key {
+    justify-self: end;
+}
 
 /* #endregion */
 
 /* #region ------------------------------------ VISUALISATION STYLING ------------------------------------ */
 
-#container { 
+/* #container { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 1em; */
     margin-top: 1em;
 
 }
@@ -408,6 +414,25 @@ span {
     margin-top: 2em;
     margin-bottom: 2em;
     margin-right: .45em;
+    background-color: var(--light-white);
+
+} */
+
+#container { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+
+}
+
+.viz-container { 
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+ 
     background-color: var(--light-white);
 
 }
