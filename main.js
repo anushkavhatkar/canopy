@@ -201,7 +201,7 @@ const url = `https://data.cityofnewyork.us/resource/${DATASET_IDENTIFIER}.json?$
 console.log(`Fetching url - ${url}`);
 // #endregion
 
-keyText.innerHTML = `Now Visualizing . . .  New York City trees`;
+keyText.innerHTML = `Not a CS major, still figuring out how to pull this data in faster! Please wait (can take upto 30s)`;
 
 // #region COLLAPSE ALL
 
@@ -1024,7 +1024,7 @@ fetch(url)
         }
 
 
-        
+
 
     });
 
