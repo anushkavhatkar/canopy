@@ -189,6 +189,10 @@ span {
     color: var(--middle-grey);
 }
 
+.underline {
+    text-decoration: underline black .1em;
+}
+
 
 /* #endregion */
 
@@ -426,6 +430,8 @@ span {
 
 }
 
+
+
 .viz-container { 
     display: flex;
     flex-direction: column;
@@ -494,6 +500,13 @@ span {
     padding: .5em;
     margin: .025em;
 }
+
+
+/* #city-grid-flex {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    
+} */
 
 /* #endregion */
 

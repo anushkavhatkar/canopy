@@ -18,6 +18,7 @@ let nonNativeTreesDOM = " ";
 
 let forestDOM = "";
 
+
 let nativeFilterBtn = document.querySelector('#native-filter');
 
 let nonNativeFilterBtn = document.querySelector('#non-native-filter');
@@ -265,8 +266,8 @@ fetch(url)
             tree.spc_common_name = "Pin Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
-            
-            
+            tree.bg = "#2B4D32";
+
             pinOakArray.push(tree);
         }
 
@@ -275,6 +276,7 @@ fetch(url)
             tree.spc_common_name = "Callery Pear";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#14B87D";
             calleryPearArray.push(tree);
         }
 
@@ -283,6 +285,7 @@ fetch(url)
             tree.spc_common_name = "Red Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#2C4A43";
             redMapleArray.push(tree);
         }
 
@@ -291,6 +294,7 @@ fetch(url)
             tree.spc_common_name = "Norway Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00C766";
             norwayMapleArray.push(tree);
         }
 
@@ -298,6 +302,7 @@ fetch(url)
             tree.spc_common_name = "Honeylocust";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#143514";
             honeylocustArray.push(tree);
         }
 
@@ -306,6 +311,7 @@ fetch(url)
             tree.spc_common_name = "American Linden";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#697A02";
             americanLindenArray.push(tree);
         }
 
@@ -314,6 +320,7 @@ fetch(url)
             tree.spc_common_name = "London Planetree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#02E34F";
             londonPlanetreeArray.push(tree);
         }
 
@@ -321,6 +328,7 @@ fetch(url)
             tree.spc_common_name = "Ginkgo";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#ACEB44";
             ginkgoArray.push(tree);
         }
 
@@ -333,6 +341,7 @@ fetch(url)
             tree.spc_common_name = "River Birch";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#005E2B";
             riverBirchArray.push(tree);
         }
         
@@ -341,6 +350,7 @@ fetch(url)
             tree.spc_common_name = "Turkish Hazelnut";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#2ADB31";
             turkishHazelnutArray.push(tree);
         }
 
@@ -349,6 +359,7 @@ fetch(url)
             tree.spc_common_name = "Hardy Rubber Tree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B3ED39";
             hardyRubberTreeArray.push(tree);
         }
 
@@ -357,6 +368,7 @@ fetch(url)
             tree.spc_common_name = "European Beech";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#D5F21F";
             europeanBeechArray.push(tree);
         }
 
@@ -365,6 +377,7 @@ fetch(url)
             tree.spc_common_name = "Kentucky Coffeetree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#428400";
             kentuckyCoffeetreeArray.push(tree);
         }
 
@@ -372,6 +385,7 @@ fetch(url)
             tree.spc_common_name = "Sweetgum";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#52762F";
             sweetgumArray.push(tree);
         }
 
@@ -379,6 +393,7 @@ fetch(url)
             tree.spc_common_name = "Tulip Poplar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#1D6249";
             tulipTreeArray.push(tree);
         }
 
@@ -386,6 +401,7 @@ fetch(url)
             tree.spc_common_name = "Blackgum";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#415C1E";
             blackgumArray.push(tree);
         }
 
@@ -394,6 +410,7 @@ fetch(url)
             tree.spc_common_name = "Sawtooth Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#3D4A08";
             sawtoothOakArray.push(tree);
         }
 
@@ -402,6 +419,7 @@ fetch(url)
             tree.spc_common_name = "Swamp White Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#325F1E";
             swampWhiteOakArray.push(tree);
         }
         
@@ -409,6 +427,7 @@ fetch(url)
             tree.spc_common_name = "Scarlet Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#70903C";
             scarletOakArray.push(tree);
         }
 
@@ -417,6 +436,7 @@ fetch(url)
             tree.spc_common_name = "Shingle Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#4C7345";
             shingleOakArray.push(tree);
         }
 
@@ -425,6 +445,7 @@ fetch(url)
             tree.spc_common_name = "Bur Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#327B10";
             burOakArray.push(tree);
         }
 
@@ -433,6 +454,7 @@ fetch(url)
             tree.spc_common_name = "Willow Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#004006";
             willowOakArray.push(tree);
         }
 
@@ -441,6 +463,7 @@ fetch(url)
             tree.spc_common_name = "Schumard's Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#145033";
             schumardOakArray.push(tree);
         }
 
@@ -449,6 +472,7 @@ fetch(url)
             tree.spc_common_name = "Black Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#21590D";
             blackOakArray.push(tree);
         }
         
@@ -456,6 +480,7 @@ fetch(url)
             tree.spc_common_name = "Sophora Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00CE78";
             sophoraArray.push(tree);
         }
         
@@ -464,6 +489,7 @@ fetch(url)
             tree.spc_common_name = "Bald Cypress";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#293A18";
             baldCypressArray.push(tree);
         }
 
@@ -472,6 +498,7 @@ fetch(url)
             tree.spc_common_name = "Littleleaf Linden";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#3F4420";
             littleleafLindenArray.push(tree);
         }
 
@@ -480,6 +507,7 @@ fetch(url)
             tree.spc_common_name = "Silver Oak";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#707649";
             silverLindenArray.push(tree);
         }
 
@@ -490,6 +518,7 @@ fetch(url)
             tree.spc_common_name = "Japanese Zelkova";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#0CF090";
             japaneseZelkovaArray.push(tree);
         }
 
@@ -498,6 +527,7 @@ fetch(url)
             tree.spc_common_name = "Red Horse Chestnut";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#DBFF00";
             redHorsechestnutArray.push(tree);
 
         }
@@ -507,6 +537,7 @@ fetch(url)
             tree.spc_common_name = "European Hornbeam";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#80FF00";
             europeanHornbeamArray.push(tree);
         }
 
@@ -515,6 +546,7 @@ fetch(url)
             tree.spc_common_name = "American Hornbeam";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#394026";
             americanElmArray.push(tree);
         }
 
@@ -523,6 +555,7 @@ fetch(url)
             tree.spc_common_name = "Japanese Hornbeam";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00FFA3";
             japaneseHornbeamArray.push(tree);
         }
 
@@ -531,6 +564,7 @@ fetch(url)
             tree.spc_common_name = "Kentucky Yellowwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#428400";
             kentuckyCoffeetreeArray.push(tree);
         }
 
@@ -539,6 +573,7 @@ fetch(url)
             tree.spc_common_name = "Golden Raintree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#5DD8B3";
             goldenRaintreeArray.push(tree);
         }
 
@@ -547,6 +582,7 @@ fetch(url)
             tree.spc_common_name = "Amur Maackia";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00CF08";
             amurMaackiaArray.push(tree);
         }
         
@@ -555,6 +591,7 @@ fetch(url)
             tree.spc_common_name = "Persian Ironwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#C9E518";
             persianIronwoodArray.push(tree);
         }
 
@@ -563,6 +600,7 @@ fetch(url)
             tree.spc_common_name = "Hedge Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#EBEE6D";
             hedgeMapleArray.push(tree);
         }
 
@@ -571,6 +609,7 @@ fetch(url)
             tree.spc_common_name = "Amur Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#01AF5A";
             amurMapleArray.push(tree);
         }
 
@@ -579,6 +618,7 @@ fetch(url)
             tree.spc_common_name = "Paperbark Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00FF19";
             paperbarkMapleArray.push(tree);
         }
 
@@ -587,6 +627,7 @@ fetch(url)
             tree.spc_common_name = "Tartar Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#20E0A6";
             tartarMapleArray.push(tree);
         }
 
@@ -595,6 +636,7 @@ fetch(url)
             tree.spc_common_name = "Shantung Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#20E084";
             shantungMapleArray.push(tree);
         }
 
@@ -602,6 +644,7 @@ fetch(url)
             tree.spc_common_name = "Serviceberry";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#6BEE90";
             serviceberryArray.push(tree);
         }
 
@@ -610,6 +653,7 @@ fetch(url)
             tree.spc_common_name = "Oklahoma Redbud";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B3ECB2";
             redbudArray.push(tree);
         }
 
@@ -618,6 +662,7 @@ fetch(url)
             tree.spc_common_name = "Chinese Fringetree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#76DAA4";
             chineseFringetreeArray.push(tree);
         }
 
@@ -626,6 +671,7 @@ fetch(url)
             tree.spc_common_name = "Kousa Dogwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#5CE05A";
             kousaDogwoodArray.push(tree);
         }
 
@@ -634,6 +680,7 @@ fetch(url)
             tree.spc_common_name = "Cornelian Cherry";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00FF75";
             cornelianCherryArray.push(tree);
         }
 
@@ -642,6 +689,7 @@ fetch(url)
             tree.spc_common_name = "Cockspur Hawthorn";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#91FF8E";
             cockspurHawthornArray.push(tree);
         }
 
@@ -650,6 +698,7 @@ fetch(url)
             tree.spc_common_name = "Crab Apple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B0FF62";
             crabappleArray.push(tree);
         }
 
@@ -659,6 +708,7 @@ fetch(url)
             tree.spc_common_name = "Purple Leaf Plum";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#93FF26";
             purpleLeafPlumArray.push(tree);
         }
 
@@ -667,6 +717,7 @@ fetch(url)
             tree.spc_common_name = "Japanese Tree Lilac";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#D8FAA0";
             japaneseTreeLilacArray.push(tree);
         }
 
@@ -675,6 +726,7 @@ fetch(url)
             tree.spc_common_name = "Chinese Tree Lilac";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#CDFF7A";
             chineseTreeLilacArray.push(tree);
         }
 
@@ -683,6 +735,7 @@ fetch(url)
             tree.spc_common_name = "Oklahoma Redbud";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B3ECB2";
             chineseTreeLilacArray.push(tree);
         }
 
@@ -692,6 +745,7 @@ fetch(url)
             tree.spc_common_name = "Sycamore Maple";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#CFF16F";
             sycamoreMapleArray.push(tree);
         }
 
@@ -702,6 +756,7 @@ fetch(url)
             tree.spc_common_name = "European Alder";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B5DF3C";
             europeanAlderArray.push(tree);
         }
 
@@ -709,6 +764,7 @@ fetch(url)
             tree.spc_common_name = "Ash";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#2B8F41";
             ashArray.push(tree);
         }
 
@@ -718,6 +774,7 @@ fetch(url)
 
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#087B21";
             greenAshArray.push(tree);
         }
 
@@ -726,6 +783,7 @@ fetch(url)
             tree.spc_common_name = "White Ash";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#3B7A49";
             whiteAshArray.push(tree);
         }
 
@@ -734,6 +792,7 @@ fetch(url)
             tree.spc_common_name = "Black Locust";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#D8DC2C";
             blackLocustArray.push(tree);
         }
 
@@ -741,6 +800,7 @@ fetch(url)
             tree.spc_common_name = "Catalpa";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#C7E8DC";
             catalpaArray.push(tree);
         }
 
@@ -749,6 +809,7 @@ fetch(url)
             tree.spc_common_name = "Atlantic White Cedar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#FFF500";
             atlanticWhiteCedarArray.push(tree);
         }
 
@@ -757,6 +818,7 @@ fetch(url)
             tree.spc_common_name = "Atlas Cedar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#FFE600";
             atlasCedarArray.push(tree);
         }
 
@@ -765,6 +827,7 @@ fetch(url)
             tree.spc_common_name = "Himalayan Cedar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#B4E9CF";
             himalayanCedarArray.push(tree);
         }
 
@@ -773,6 +836,7 @@ fetch(url)
             tree.spc_common_name = "Schubert chokecherry";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#7B903C";
             chokecherryArray.push(tree);
         }
 
@@ -781,6 +845,7 @@ fetch(url)
             tree.spc_common_name = "Amur Corktree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#CEF6DC";
             corktreeArray.push(tree);
         }
 
@@ -789,6 +854,7 @@ fetch(url)
             tree.spc_common_name = "Eastern Cottonwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#ECFFB5";
             easternCottonwoodArray.push(tree);
         }
 
@@ -797,6 +863,7 @@ fetch(url)
             tree.spc_common_name = "Dawn Redwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#66F40F";
             dawnRedwoodArray.push(tree);
 
         }
@@ -806,6 +873,7 @@ fetch(url)
             tree.spc_common_name = "Douglas Fir";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#1A473C";
             douglasFirArray.push(tree);
         }
 
@@ -814,6 +882,7 @@ fetch(url)
             tree.spc_common_name = "Eastern Redcedar";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#85947F";
             easternRedcedarArray.push(tree);
 
         }
@@ -822,6 +891,7 @@ fetch(url)
             tree.spc_common = "American Elm";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#76815E";
             americanElmArray.push(tree);
         }
 
@@ -830,6 +900,7 @@ fetch(url)
             tree.spc_common_name = "Chinese Elm";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#C3FF43";
             chineseElmArray.push(tree);
         }
 
@@ -838,6 +909,7 @@ fetch(url)
             tree.spc_common_name = "Siberian Elm";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#02DC59";
             siberianElmArray.push(tree);
         }
 
@@ -846,6 +918,7 @@ fetch(url)
             tree.spc_common_name = "Empress Tree";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#C4EB71";
             empressTreeArray.push(tree);
 
         }
@@ -855,6 +928,7 @@ fetch(url)
             tree.spc_common_name = "Eastern Hemlock";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#4FCB79";
             easternHemlockArray.push(tree);
         }
 
@@ -863,6 +937,7 @@ fetch(url)
             tree.spc_common_name = "Pignut Hickory";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#195640";
             hickoryArray.push(tree);
         }
 
@@ -870,6 +945,7 @@ fetch(url)
             tree.spc_common_name = "Holly";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#8C9F13";
             hollyArray.push(tree);
         }
 
@@ -878,6 +954,7 @@ fetch(url)
             tree.spc_common_name = "Japanese Snowbell";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#4FCB97";
             japaneseSnowbellArray.push(tree);
         }
 
@@ -886,6 +963,7 @@ fetch(url)
             tree.spc_common_name = "Katsura";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#60CB4F";
             katsuraTreeArray.push(tree);
         }
 
@@ -894,6 +972,7 @@ fetch(url)
             tree.spc_common_name = "American Larch";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#729F13";
             americanLarchArray.push(tree);
         }
 
@@ -901,6 +980,7 @@ fetch(url)
             tree.spc_common_name = "Magnolia";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#64980F";
             magnoliaArray.push(tree);
         }
 
@@ -909,6 +989,7 @@ fetch(url)
             tree.spc_common_name = "Southern Magnolia";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#8DCB4F";
             southernMagnoliaArray.push(tree);
         }
 
@@ -918,6 +999,7 @@ fetch(url)
             tree.spc_common_name = "Cucumber Magnolia";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#7F920C";
             cucumberMagnoliaArray.push(tree);
         }
 
@@ -925,6 +1007,7 @@ fetch(url)
             tree.spc_common_name = "Mulberry";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#48622E";
             mulberryArray.push(tree);
         }
 
@@ -933,6 +1016,7 @@ fetch(url)
             tree.spc_common_name = "Osage-orange";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#9FE25B";
             osageOrangeArray.push(tree);
         }
 
@@ -941,6 +1025,7 @@ fetch(url)
             tree.spc_common_name = "Pagoda Dogwood";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#678847";
             pagodaDogwoodArray.push(tree);
         }
 
@@ -949,6 +1034,7 @@ fetch(url)
             tree.spc_common_name = "White Pine";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#81B480";
             whitePineArray.push(tree);
         }
 
@@ -957,6 +1043,7 @@ fetch(url)
             tree.spc_common_name = "Red Pine";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#98B054";
             redPineArray.push(tree);
         }
 
@@ -965,6 +1052,7 @@ fetch(url)
             tree.spc_common_name = "Scots Pine";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#E3FD7D";
             scotsPineArray.push(tree);
         }
 
@@ -973,6 +1061,7 @@ fetch(url)
             tree.spc_common_name = "Black Pine";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#7DFDCF";
             blackPineArray.push(tree);
         }
 
@@ -981,6 +1070,7 @@ fetch(url)
             tree.spc_common_name = "Silverbell";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#60B596";
             silverbellArray.push(tree);
         }
 
@@ -988,6 +1078,7 @@ fetch(url)
             tree.spc_common_name = "Spruce";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#959025";
             spruceArray.push(tree);
         }
 
@@ -996,6 +1087,7 @@ fetch(url)
             tree.spc_common_name = "Norway Spruce";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#1CBDA0";
             norwaySpruceArray.push(tree);
         }
 
@@ -1004,6 +1096,7 @@ fetch(url)
             tree.spc_common_name = "Blue Spruce";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#3AB600";
             blueSpruceArray.push(tree);
         }
  
@@ -1012,6 +1105,7 @@ fetch(url)
             tree.spc_common_name = "Tree of Heaven";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#00B649";
             heavenArray.push(tree);
         }
 
@@ -1020,6 +1114,7 @@ fetch(url)
             tree.spc_common_name = "Black Walnut";
             tree.imageOne = internalImagePath + tree.spc_common + "-1" + ".jpeg";
             tree.imageTwo = internalImagePath + tree.spc_common + "-2" + ".jpeg";
+            tree.bg = "#A9A655";
             blackWalnutArray.push(tree);
         }
 
@@ -1243,6 +1338,11 @@ createTheDivs(allArray);
 
 percentageFilterBtn.addEventListener("click", function() {
 
+    percentageFilterBtn.classList.add('underline');
+
+    nativeFilterBtn.classList.remove('underline');
+    nonNativeFilterBtn.classList.remove('underline');
+
     treesDOM = "";
     keyText.innerHTML = `Now Visualizing ${allTreesTotalNumber} New York City trees`;
 
@@ -1263,6 +1363,11 @@ percentageFilterBtn.addEventListener("click", function() {
         nativeTreesDOM = "";
         keyText.innerHTML = `Now Visualizing ${nativeTreesTotalNumber} New York City trees`;
         // mainContainer.innerHTML = " ";
+
+        nativeFilterBtn.classList.add('underline');
+
+        nonNativeFilterBtn.classList.remove('underline');
+        percentageFilterBtn.classList.remove('underline');
         
         function createNativeDivs(arr) { 
             for (let k=0; k < arr[k].length; k++) {
@@ -1334,6 +1439,11 @@ percentageFilterBtn.addEventListener("click", function() {
     nonNativeFilterBtn.addEventListener("click", function() {
         nonNativeTreesDOM = "";
         keyText.innerHTML = `Now Visualizing ${nonNativeTreesTotalNumber} New York City trees`;
+
+        nonNativeFilterBtn.classList.add('underline');
+
+        nativeFilterBtn.classList.remove('underline');
+        percentageFilterBtn.classList.remove('underline');
         
         
         function createNonNativeDivs(arr) { 
@@ -1403,7 +1513,26 @@ percentageFilterBtn.addEventListener("click", function() {
     // #endregion
 
 
+percentageFilterBtn.addEventListener("mouseover", function() {
+    percentageFilterBtn.classList.add('underline');
 
+    nativeFilterBtn.classList.remove('underline');
+    nonNativeFilterBtn.classList.remove('underline');
+})
+
+nativeFilterBtn.addEventListener("mouseover", function() {
+    nativeFilterBtn.classList.add('underline');
+
+    percentageFilterBtn.classList.remove('underline');
+    nonNativeFilterBtn.classList.remove('underline');
+})
+
+nonNativeFilterBtn.addEventListener("mouseover", function() {
+    nonNativeFilterBtn.classList.add('underline');
+
+    percentageFilterBtn.classList.remove('underline');
+    nativeFilterBtn.classList.remove('underline');
+})
 
     
 // #endregion 
@@ -1415,16 +1544,97 @@ percentageFilterBtn.addEventListener("click", function() {
 // #region MAIN FILTERS  --------------------------------------
 
 forestBtn.addEventListener("click", function () {
+
+    mainContainer.innerHTML = "";
+
+    mainContainer.style.gridTemplateColumns = "1 fr 1.35fr";
+
     forestDOM = "";
 
     keyFlex.innerHTML = 
-    `<div>
-            Visualizing all ${allTreesTotalNumber} New York City trees
-    </div>
+    `
+    
+    <div id="key-text">Now Contextualizing ${allTreesTotalNumber} New York City trees</div>
+        
+        <div class="body-text sub-filters-flex" id="subfilters-two">
 
-    <div>
-        1 square = 100 trees
-    </div>`;
+            <div id="percentage-view" class="sub-filter">Percentage View </div>
+            <div id="canopy-view" class="sub-filter"> Canopy View</div> 
+
+
+        </div>
+
+        <div id="key">
+            By Percentage
+        </div>
+    
+
+    
+    
+    `;
+
+
+
+
+
+    forestDOM += `<div id="city-flex-grid">`;
+
+
+    function createForestKey (arr1, arr2) {
+
+
+
+        forestDOM += `<div id="forest-key">`;
+
+        forestDOM += `<p class="body-text">Native</p>`;
+        
+        for (let i=0; i<arr1.length; i++) { 
+            // forestDOM += `<div class="tiny-box" style="background-color:${arr1[i][i].spc_common}"></div>`;
+            forestDOM += `<div class="tiny-box" style="background-color:black"></div>`;
+            // console.log(arr1[i][i].spc_common);
+            // console.log(arr2[i][i].spc_common);
+            // console.log(arr1);
+        }
+
+        forestDOM += `<br><p class="body-text">Non-Native</p>`;
+
+        for (let j=0; j<arr2.length; j++) { 
+            forestDOM += `<div class="tiny-box" style="background-color:${arr2[j][1].bg}"></div>`;
+        }
+
+
+
+
+        forestDOM += `</div>`;
+
+    }
+
+    createForestKey(allNativeArray, allNonNativeArray);
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    forestDOM += `<div id="forest-dom">`
+
+    forestDOM += `</div>`;
+
+
+
+
+
+
+    
+    forestDOM += `</div>`;
 
 
     mainContainer.innerHTML = forestDOM;
@@ -1435,7 +1645,7 @@ forestBtn.addEventListener("click", function () {
 
 
     
-//#region A TREE FUNCTION -----------------------
+//#region A TREE FUNCTION 
 
 
 aTreeBtn.addEventListener("click", function() {
@@ -1489,6 +1699,9 @@ aTreeBtn.addEventListener("click", function() {
 
 
 // #endregion
+
+
+
 
  
 // #region ABOUT PAGE ------------------------------------------
