@@ -141,31 +141,47 @@ body {
     width: 90vw;
     margin: 0 auto;
     background-color: var(--light-white);
+    
+    
 }
 /* #endregion */
 
 
 /* #region ------------------------------------ TYPOGRAPHY ------------------------------------  */
 
+
+
 .header { 
-font-family: shift, serif;
-font-weight: 100;
+/* font-family: shift, serif;
+font-weight: 100; */
+
+font-family: lores-21-serif, sans-serif;
+font-weight: 400;
+font-style: normal;
 font-size: var(--header-text-size);
-color: var(--black);
+
+color: var(--middle-grey);
 }
 
 .header:hover { 
-    font-family: shift, serif;
-    font-weight: 100;
+    /* font-family: shift, serif;
+    font-weight: 100; */
+    font-family: lores-21-serif, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: var(--header-text-size);
-    color: var(--middle-grey);
+    color: var(--black);
     cursor: pointer;
 }
 
 .header-italic { 
-font-family: shift, serif;
-font-weight: 100;
-font-style: italic;
+/* font-family: shift, serif;
+font-weight: 100; */
+
+font-family: lores-21-serif, sans-serif;
+font-weight: 400;
+font-style: normal;
+/* font-style: italic; */
 font-size: var(--header-text-size);
 }
 
@@ -194,13 +210,15 @@ span {
 }
 
 
+
+
 /* #endregion */
 
 
 /* #region ------------------------------------ GENERAL STYLES ------------------------------------ */
 
 .site-nav { 
-    margin: 1.5em 0em;
+    margin: 2.5em 0em;
     list-style: none;
     display: flex;
     flex-direction: row;

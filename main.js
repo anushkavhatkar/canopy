@@ -1539,6 +1539,25 @@ nonNativeFilterBtn.addEventListener("mouseover", function() {
 
 
 
+//#region 
+
+let greyBoxesArray = [];
+for (let g=0; g<1000; g++) {
+    let greyBox = document.createElement('div');
+    greyBox.style.backgroundColor = "#888888";
+    greyBox.classList.add("tiny-box");
+    greyBoxesArray.push(greyBox);
+}
+
+let reducedForestArray = [];
+
+let forestArray = [];
+
+
+
+//#endregion
+
+
 
 
 // #region MAIN FILTERS  --------------------------------------
@@ -1599,8 +1618,10 @@ forestBtn.addEventListener("click", function () {
         forestDOM += `<br><p class="body-text">Non-Native</p>`;
 
         for (let j=0; j<arr2.length; j++) { 
-            forestDOM += `<div class="tiny-box" style="background-color:${arr2[j][1].bg}"></div>`;
+            forestDOM += `<div class="tiny-box" style="background-color:black"></div>`;
         }
+
+
 
 
 
@@ -1622,9 +1643,13 @@ forestBtn.addEventListener("click", function () {
     
 
 
+    mainContainer.appendChild(greyBoxesArray);
+
+    forestDOM += `<div id="forest-dom" class="tree-container">`
+
+    
 
 
-    forestDOM += `<div id="forest-dom">`
 
     forestDOM += `</div>`;
 
