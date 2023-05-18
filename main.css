@@ -186,9 +186,12 @@ font-size: var(--header-text-size);
 }
 
 .filter-text { 
-font-family: neue-haas-grotesk-text, sans-serif;
+/* font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 500;
-font-style: normal;
+font-style: normal; */
+
+font-family: lores-21-serif, sans-serif;
+font-weight: 400;
 letter-spacing: .02em;
 font-size: var(--filter-text-size);
 }
