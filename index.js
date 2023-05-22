@@ -65,6 +65,7 @@ function size(){
   // console.log(typeof(squareDivs));
   // console.log(squareDivs);
 
+  // Figured this code out with help from Prof Patrick Morrissey
   hoverText.innerHTML = "Native";
     
 
@@ -79,14 +80,6 @@ function size(){
         }
     });
     
-    // window.addEventListener("mousemove", function(e){
-    //   let mouseX = e.pageX;
-    //   let mouseY = e.pageY;
-    
-    //   hoverText.style.top = mouseX + "px";
-    //   hoverText.style.left = mouseY + "px";
-      
-    // });
     
     
   }
@@ -104,14 +97,6 @@ function size(){
 
 };
 
-// document.addEventListener("mousemove", function(e){
-//   let mouseX = e.clientX;
-//   let mouseY = e.clientY;
-
-//   hoverText.style.top = e.clientX + "px";
-//   hoverText.style.left = e.clientY + "px";
-  
-// });
 
 window.addEventListener('resize',function(){
 	size();
